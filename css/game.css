@@ -3063,9 +3063,32 @@
             color: var(--e-global-color-primary );
         }
 
+        @keyframes pulsateProgress {
+            0% {
+              background-color: red;
+              color: black;
+            }
+            50% {
+              background-color: #ff7878;
+              color: black;
+            }
+            100% {
+                background-color: red;
+                color: black;
+            }
+          }
+
         @media (max-width: 767px) {
             .sv_title_flex {
             font-size: 10px;
+            }
+
+            .container-facts {
+                flex-direction: column;
+            }
+
+            .container-facts div {
+                width: 100%;
             }
 
             .divScore {
@@ -3134,10 +3157,19 @@
             overflow: hidden;
         }
 
-        .true, .false {
+        .true {
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateProgress;
+            white-space: nowrap;
+        }
+
+        .false {
             visibility: visible;
         }
 
-        .live {
-            visibility: hidden;
+        .container-facts {
+            display: flex; 
+            background-color: transparent; 
+            font-size: 16px;
         }

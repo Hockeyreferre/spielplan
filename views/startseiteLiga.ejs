@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spielplan | LEV MV</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/game.css">
     <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
@@ -32,40 +32,91 @@
   </header>
     <div class="item" id="oberligaN">
       <h2>Live</h2> <br>
-        <table>
-            <thead>
-                <td class="date">Datum</td>
-                <td class="time">Uhrzeit</td>
-                <td class="home">Heim</td>
-                <td class="homeShort">Heim</td>
-                <td class="gameLogo"></td>
-                <td class="score"></td>
-                <td class="vs"></td>
-                <td class="score"></td>
-                <td class="overtime">OT</td>
-                <td class="gameLogo"></td>
-                <td class="away">Gast</td>
-                <td class="awayShort">Gast</td>
-            </thead>
-            <tbody>
-              <% live.forEach(element => { %>
-                <tr>
-                      <td class="date"><%= element.date %></td>
-                      <td class="time"><%= element.time %></td>
-                      <td class="home"><%= element.home %></td>
-                      <td class="homeShort"><%= element.logoHome %></td>
-                      <td class="gameLogo"><img width="100%" src="/images/tn_<%= element.logoHome %>.png"/></td>
-                      <td id="<%= element.live %>" class="score"><%= element.scoreHome %></td>
-                      <td id="<%= element.live %>" class="vs">:</td>
-                      <td id="<%= element.live %>" class="score"><%= element.scoreAway %></td>
-                      <td class="overtime <%= element.overtime %>">OT</td>
-                      <td class="gameLogo"><img width="100%" src="/images/tn_<%= element.logoAway %>.png"/></td>
-                      <td class="away"><%= element.away %></td>
-                      <td class="awayShort"><%= element.logoAway %></td>
-              </tr>
-              <% }) %>
-            </tbody>
-        </table>
+      <div id="pgc-1499-1-0" class="panel-grid-cell">
+        <aside class="widget">
+            <div class="-hd -hd-widget-parsed -hd-widget -hd-rd-mobile">
+                <div class="-hd-los -hd-los-schedule">
+                    <div class="-hd-util-intellitable -hd-los-schedule-table">
+                        <div class="-hd-util-intellitable-data">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="-hd-util-intellitable-date-value -hd-los-schedule-scheduled-date -hd-clickable"
+                                            title="Geplantes Datum">Datum</th>
+                                        <th class="-hd-util-intellitable-time-value -hd-los-schedule-scheduled-time -hd-clickable"
+                                            title="Geplante Uhrzeit">Zeit</th>
+                                        <th class="-hd-los-schedule-home-team-name -hd-los-schedule-team-name-long -hd-clickable"
+                                            title="Heimteam">Heim</th>
+                                        <th class="-hd-los-schedule-home-team-name -hd-los-schedule-team-name-short -hd-clickable"
+                                            title="Heimteam">Heim</th>
+                                        <th
+                                            class="-hd-los-schedule-team-logo -hd-los-schedule-home-team-logo -hd-clickable">
+                                            &nbsp;</th>
+                                        <th
+                                            class="-hd-los-schedule-home-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value -hd-clickable">
+                                            &nbsp;</th>
+                                        <th class="-hd-clickable">&nbsp;</th>
+                                        <th
+                                            class="-hd-los-schedule-away-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value -hd-clickable">
+                                            &nbsp;</th>
+                                        <th class="-hd-clickable">&nbsp;</th>
+                                        <th
+                                            class="-hd-los-schedule-team-logo -hd-los-schedule-home-team-logo -hd-clickable">
+                                            &nbsp;</th>
+                                        <th class="-hd-los-schedule-away-team-name -hd-los-schedule-team-name-short -hd-clickable"
+                                            title="Gastteam">Gast</th>
+                                        <th class="-hd-los-schedule-away-team-name -hd-los-schedule-team-name-long -hd-clickable"
+                                            title="Gastteam">Gast</th>
+                                        <th title="Ort" class="-hd-clickable">Ort</th>
+                                        <th title="Zum Spiel" class="-hd-clickable"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <% live.forEach(element => { %>
+                                    <tr class="-hd-los-schedule-row-8d36e21f-4898-41e5-aed0-6a6328eaca4e"
+                                        id="row-">
+                                        <td class="-hd-los-schedule-col-scheduledDate -hd-util-intellitable-date-value -hd-los-schedule-scheduled-date" value="<%= element.date %>"><%= element.date %></td>
+                                        <td class="-hd-los-schedule-col-scheduledTime -hd-util-intellitable-time-value -hd-los-schedule-scheduled-time"
+                                            value="<%= element.time %>"><%= element.time %></td>
+                                        <td class="-hd-los-schedule-col-homeTeamLongname -hd-los-schedule-home-team-name -hd-los-schedule-team-name-long"
+                                            value="<%= element.home.name %>"><%= element.home.name %></td>
+                                        <td class="-hd-los-schedule-col-homeTeamShortname -hd-los-schedule-home-team-name -hd-los-schedule-team-name-short"
+                                            value="<%= element.home.logo %>"><%= element.home.logo %></td>
+                                        <td class="-hd-los-schedule-col-homeTeamLogo -hd-util-intellitable-inline-image -hd-los-schedule-team-logo -hd-los-schedule-home-team-logo"
+                                            value="[object HTMLImageElement]"><img
+                                                src="/images/tn_<%= element.home.logo %>.png">
+                                        </td>
+                                        <td class="-hd-los-schedule-col-homeTeamScore -hd-los-schedule-home-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value"
+                                            value="-">-</td>
+                                        <td class="-hd-los-schedule-col-scoreDivider -hd-los-schedule-score-divider"
+                                            value=":">:</td>
+                                        <td class="-hd-los-schedule-col-awayTeamScore -hd-los-schedule-away-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value"
+                                            value="-">-</td>
+                                        <td class="-hd-los-schedule-col-scoreInfo" value="&amp;nbsp;">&nbsp;</td>
+                                        <td class="-hd-los-schedule-col-awayTeamLogo -hd-util-intellitable-inline-image -hd-los-schedule-team-logo -hd-los-schedule-away-team-logo"
+                                            value="[object HTMLImageElement]"><img
+                                                src="/images/tn_<%= element.away.logo %>.png">
+                                        </td>
+                                        <td class="-hd-los-schedule-col-awayTeamShortname -hd-los-schedule-away-team-name -hd-los-schedule-team-name-short"
+                                            value="<%= element.away.logo %>"><%= element.away.logo %></td>
+                                        <td class="-hd-los-schedule-col-awayTeamLongname -hd-los-schedule-away-team-name -hd-los-schedule-team-name-long"
+                                            value="<%= element.away.name %>"><%= element.away.name %></td>
+                                        <td class="-hd-los-schedule-col-locationLongname" value="<%= element.stadion %>">
+                                          <%= element.stadion %></td>
+                                        <td><a style="text-decoration: none; font-weight: bold;" class="<%= element.live %>" href="/<%= liga %>/game/<%= element.id %>/<%= element.home.name %>/<%= element.away.name %>">Zum Spiel</a></td>
+                                    </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                            <div class="-hd-util-intellitable-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </aside>
+    
+    </div>
     </div>
 
     <script src="/js/nav.js"></script>

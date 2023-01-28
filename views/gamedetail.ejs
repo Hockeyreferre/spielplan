@@ -44,13 +44,13 @@
         <div class="sv_title_flex">
             <div class="sv_links_title TeamLogo"><a href="#"><img decoding="async"
                         src="/images/tn_<%= data.home.logo %>.png"></a></div>
-            <div class="sv_mitte_title divScore"><%= goalsHome.length %> : <%= goalsAway.length %></div>
+            <div class="sv_mitte_title divScore <%= data.live %>"><%= goalsHome.length %> : <%= goalsAway.length %></div>
             <div class="sv_rechts_title TeamLogo"><a href="#"><img decoding="async"
                         src="/images/tn_<%= data.away.logo %>.png"></a></div>
         </div>
         <div class="sv_title_flex">
             <div class="sv_links_title"><b><%= data.home.name %></b></div>
-            <div class="sv_mitte_title"><%= data.stadion %></div>
+            <div class="sv_mitte_title <%= data.live %>" style="visibility: hidden;">>ENTSTAND</div>
             <div class="sv_rechts_title"><b><%= data.away.name %></b></div>
         </div>
     </div>
@@ -65,9 +65,9 @@
         </div>
         <div class="-hd-los-game-full-report-period-stats-score">
             <div>Spielstand</div>
-            <div>0 : 0</div>
-            <div>0 : 0</div>
-            <div>0 : 0</div>
+            <div><%= goalsHome1.length %> : <%= goalsHome1.length %></div>
+            <div><%= goalsHome2.length %> : <%= goalsAway2.length %></div>
+            <div><%= goalsHome3.length %> : <%= goalsAway3.length %></div>
             <div>0 : 0</div>
         </div>
         <div class="-hd-los-game-full-report-period-stats-additional">
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <div class="-hd-los-game-full-report-game-facts" style="display: flex; background-color: transparent; font-size: 16px;">
+    <div class="-hd-los-game-full-report-game-facts container-facts">
         <div style="width: 50%;">
             <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-scheduledDate">
                 <div class="-hd-los-game-full-report-game-fact-label">
@@ -128,7 +128,7 @@
                     <div>Cheftrainer <%= data.away.logo %></div>
                 </div>
                 <div class="-hd-los-game-full-report-game-fact-value">
-                    <div>&#160;</div>
+                    <div>&#160; <%= away.Trainer %></div>
                 </div>
             </div>
             <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-linesman1">
@@ -952,8 +952,7 @@
         </article>
     </main>
 
-    <script src="/js/home.js"></script>
-    <script src="/js/away.js"></script>
+    <script src="/js/nav.js"></script>
 </body>
 
 </html>
