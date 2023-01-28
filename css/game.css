@@ -1,0 +1,3143 @@
+
+        /* Layout 156 */
+        #pgc-156-0-0 {
+            width: 100%;
+            width: calc(100% - (0 * 30px))
+        }
+
+        #pl-156 .so-panel {
+            margin-bottom: 30px
+        }
+
+        #pl-156 .so-panel:last-of-type {
+            margin-bottom: 0px
+        }
+
+        @media (max-width:780px) {
+
+            #pg-156-0.panel-no-style,
+            #pg-156-0.panel-has-style>.panel-row-style,
+            #pg-156-0 {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #pg-156-0>.panel-grid-cell,
+            #pg-156-0>.panel-row-style>.panel-grid-cell {
+                width: 100%;
+                margin-right: 0
+            }
+
+            #pl-156 .panel-grid-cell {
+                padding: 0
+            }
+
+            #pl-156 .panel-grid .panel-grid-cell-empty {
+                display: none
+            }
+
+            #pl-156 .panel-grid .panel-grid-cell-mobile-last {
+                margin-bottom: 0px
+            }
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data table {
+            border-color: #ffffff;
+        }
+
+        .-hd-button {
+            border-color: #ffffff;
+        }
+
+        .-hd-util-tabs .-hd-util-tabs-button {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-knockout-stage {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box-wrapper .-hd-los-game-live-box {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-play-by-play-score {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-scores .-hd-los-game-scores-game-time {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-scores .-hd-los-game-scores-score {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-play-by-play .-hd-los-game-play-by-play-game-time {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-container-data {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-scores-game-time {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-scores-score {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-play-by-play-game-time {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-play-by-play-score {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-field-players-data-lineups {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-time-on-ice-highlights-player {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-container-data {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-container-data {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-picture img {
+            border-color: #ffffff;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data .-hd-util-intellitable-data>table {
+            border-color: #ffffff;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-legend td {
+            color: #ffffff;
+        }
+
+        .-hd-los-game-scores .-hd-los-game-scores-game-time {
+            color: #ffffff;
+        }
+
+        .-hd-los-game-play-by-play .-hd-los-game-play-by-play-game-time {
+            color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-scores-game-time {
+            color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-play-by-play-game-time {
+            color: #ffffff;
+        }
+
+        .-hd-util-tabs .-hd-util-tabs-buttons {
+            border-bottom-color: #ffffff;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs .-hd-util-tabs-button {
+            border-bottom-color: #ffffff;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter {
+            border-bottom-color: #ffffff;
+        }
+
+        .-hd-los-division-picker .-hd-los-division-picker-select-container {
+            border-bottom-color: #ffffff;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs .-hd-util-tabs-button:last-child {
+            border-right-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-period-bar td {
+            border-right-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-bar td {
+            border-right-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-tabs .-hd-util-tabs-button {
+            border-top-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report th.-hd-los-game-full-report-time-on-ice-player-jersey-nr-away {
+            border-left-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report td.-hd-los-game-full-report-time-on-ice-player-jersey-nr-away {
+            border-left-color: #ffffff;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data th {
+            background-color: #ffffff;
+        }
+
+        .-hd-button.-hd-button-active {
+            background-color: #ffffff;
+        }
+
+        .-hd-util-tabs .-hd-util-tabs-button:hover {
+            background-color: #ffffff;
+        }
+
+        .-hd-util-tabs .-hd-util-tabs-button-active {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-header {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-info {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-knockout-stage-compact .-hd-los-knockout-stage-compact-phase-header {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar td {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-ticker .-hd-los-game-ticker-game {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-game-info {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-period-stats {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-tabs .-hd-util-tabs-button:hover {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-tabs .-hd-util-tabs-button-active {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-scores .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-scores-row-period-change td {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-scores .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-scores-row-period-change:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-play-by-play-row-period-change:nth-child(even) td {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-play-by-play-row-period-change:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-info {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-info {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-headline {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-lineup-player-jersey-no {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-info {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-headline {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-info {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-headline {
+            background-color: #ffffff;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data th {
+            color: #000000;
+        }
+
+        .-hd-button.-hd-button-active {
+            color: #000000;
+        }
+
+        .-hd-util-tabs .-hd-util-tabs-button {
+            color: #000000;
+        }
+
+        .-hd-util-tabs .-hd-util-tabs-button:hover {
+            color: #000000;
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-overtime {
+            color: #000000;
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-shootout {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-header {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-header {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-info {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-games.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-knockout-stage-overtime {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-games.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-knockout-stage-shootout {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage-compact .-hd-los-knockout-stage-compact-phase-header {
+            color: #000000;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider {
+            color: #000000;
+        }
+
+        .-hd-los-game-ticker .-hd-los-game-ticker-game {
+            color: #000000;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-game-info {
+            color: #000000;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-period-stats {
+            color: #000000;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-tabs .-hd-util-tabs-button:hover {
+            color: #000000;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-tabs .-hd-util-tabs-content {
+            color: #000000;
+        }
+
+        .-hd-los-game-scores .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-scores-row-period-change td {
+            color: #000000;
+        }
+
+        .-hd-los-game-scores .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-scores-row-period-change:nth-child(odd) td {
+            color: #000000;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-play-by-play-row-period-change:nth-child(even) td {
+            color: #000000;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-play-by-play-row-period-change:nth-child(odd) td {
+            color: #000000;
+        }
+
+        .-hd-los-game-info {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-info {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-bar-label {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-facts {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-headline {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-lineup-player-jersey-no {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-penalty-shot {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-winning-goal {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-empty-net {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-time-on-ice-highlights-player-name {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-time-on-ice-highlights-player-stats {
+            color: #000000;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-info {
+            color: #000000;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-jersey-no {
+            color: #000000;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-facts {
+            color: #000000;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-headline {
+            color: #000000;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-games-state {
+            color: #000000;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-info {
+            color: #000000;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-headline {
+            color: #000000;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-roster-player-container {
+            color: #000000;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-games-state {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-lineup-player-jersey-no {
+            border-right-color: #000000;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data th.-hd-util-intellitable-sorted {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-header {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-ticker .-hd-los-game-ticker-overtime {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-ticker .-hd-los-game-ticker-shootout {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-period-bar td {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-period-stats>div.-hd-los-game-live-box-period-stats-header>div {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-info .-hd-los-game-info-game-state {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-info .-hd-los-game-info-game-date {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-state {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-bar td {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats>div>div {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-fact-label div {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-headline .-hd-button.-hd-button-active {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-team-logo {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-fact-label div {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-games-state {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-logo {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-games-state {
+            background-color: #8c8c8c;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-info {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-info {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-headline {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-info {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-headline {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-info {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-headline {
+            border-bottom-color: #8c8c8c;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-headline .-hd-button {
+            border-color: #8c8c8c;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-jersey-no {
+            color: #8c8c8c;
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-overtime {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-shootout {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-games.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-knockout-stage-overtime {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-games.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-knockout-stage-shootout {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-knockout-stage-compact .-hd-util-intellitable .-hd-util-intellitable-data th {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-scores.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-live-box-scores-row-period-change td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-scores.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-live-box-scores-row-period-change:nth-child(odd) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-live-box-play-by-play-row-period-change:nth-child(even) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-live-box-play-by-play-row-period-change:nth-child(odd) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(even) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(odd) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-util-intellitable-data th {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-scores-data.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-full-report-scores-row-period-change td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-scores-data.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-full-report-scores-row-period-change:nth-child(odd) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-full-report-play-by-play-row-period-change:nth-child(even) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data .-hd-los-game-full-report-play-by-play-row-period-change:nth-child(odd) td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-penalty-shot {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-winning-goal {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-empty-net {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-player-full-page .-hd-util-intellitable-data th {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-team-full-page .-hd-util-intellitable-data th {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-team-full-page .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data tr.-hd-los-team-full-page-team-facts-table-header-row td {
+            background-color: #cf102d;
+        }
+
+        .-hd-los-standings .-hd-los-standings-official-status-text {
+            color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(even) td {
+            border-bottom-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(odd) td {
+            border-bottom-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(even) td {
+            border-bottom-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(odd) td {
+            border-bottom-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(even) td {
+            border-top-color: #cf102d;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(odd) td {
+            border-top-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(even) td {
+            border-top-color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data tr.-hd-label-DRIVETOTAL:nth-child(odd) td {
+            border-top-color: #cf102d;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(even) td {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-legend tr:nth-child(even) td {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-knockout-stage {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-game-fact-value div {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-scores.-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(even) td:nth-child(4) {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-scores .-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(even) td:nth-child(4) {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-scores-data.-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(even) td:nth-child(4) {
+            background-color: #e5e5e5;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td {
+            background-color: #cccccc;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-legend tr:nth-child(odd) td {
+            background-color: #cccccc;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-game-fact-label div {
+            background-color: #cccccc;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-play-by-play.-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td:nth-child(4) {
+            background-color: #cccccc;
+        }
+
+        .-hd-los-game-play-by-play .-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td:nth-child(4) {
+            background-color: #cccccc;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-play-by-play-data.-hd-util-intellitable .-hd-util-intellitable-data tr:nth-child(odd) td:nth-child(4) {
+            background-color: #cccccc;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-lineup-player {
+            background-color: #cccccc;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-legend table {
+            border-color: #cccccc;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-ticker-action-headline {
+            border-bottom-color: #cccccc;
+        }
+
+        .-hd-los {
+            color: #000000;
+        }
+
+        .-hd-los a {
+            color: #000000;
+        }
+
+        .-hd-los-schedule .-hd-util-intellitable .-hd-util-intellitable-data td[value="0"] {
+            color: #000000;
+        }
+
+        .-hd-los-standings .-hd-util-intellitable .-hd-util-intellitable-data td[value="0"] {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage .-hd-los-knockout-stage-phase-encounter-games.-hd-util-intellitable .-hd-util-intellitable-data td[value="0"] {
+            color: #000000;
+        }
+
+        .-hd-los-knockout-stage-compact .-hd-util-intellitable .-hd-util-intellitable-data th {
+            color: #000000;
+        }
+
+        .-hd-los-game-full-report .-hd-util-intellitable-data th {
+            color: #000000;
+        }
+
+        .-hd-los-player-full-page .-hd-util-intellitable-data th {
+            color: #000000;
+        }
+
+        .-hd-los-team-full-page .-hd-util-intellitable-data th {
+            color: #000000;
+        }
+
+        .-hd-los-game-live-box .-hd-los-game-live-box-period-bar-fill {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-bar-fill {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats>div.-hd-los-game-full-report-period-stats-header>div {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-facts {
+            background-color: #ffffff;
+        }
+
+        .-hd-los-player-full-page .-hd-los-player-full-page-player-facts {
+            background-color: #ffffff;
+        }
+
+        .-hd-game-document-link {
+            background-color: #cf102d;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-scroll-help {
+            color: #cf102d;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data td[value="0"] {
+            color: #cf102d;
+        }
+
+        .-hd-util-intellitable .-hd-util-intellitable-data td.-hd-util-intellitable-ex-aequo {
+            color: #cf102d;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-goals-player-jersey-no {
+            color: #cf102d;
+        }
+        .-hd-clickable {
+            cursor: pointer;
+        }
+
+        .-hd-img-error {
+            display: none;
+        }
+
+        /*
+     * Buttons
+     */
+        .-hd-button {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            color: #888;
+            cursor: pointer;
+            min-width: 80px;
+            padding: 2px 6px;
+            text-align: center;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 15px
+        }
+
+        .-hd-button.-hd-button-active {
+            background-color: #bbb;
+            color: #fff;
+        }
+
+        .-hd-button-group .-hd-button:first-child {
+            border-right: none;
+        }
+
+        /*
+     * IntelliTable
+     */
+        .-hd-util-intellitable-data {
+            overflow: auto;
+            position: relative;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 16px
+        }
+
+        .-hd-util-intellitable-rank {
+            text-align: right;
+        }
+
+        .-hd-util-intellitable-sort-asc:after {
+            content: " ▲";
+        }
+
+        .-hd-util-intellitable-sort-desc:after {
+            content: " ▼";
+        }
+
+        .-hd-util-intellitable-data table {
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 0;
+            width: 100%;
+
+        }
+
+        .-hd-util-intellitable-legend table {
+            display: none;
+            width: auto;
+
+        }
+
+        .-hd-util-intellitable-data th {
+            background-color: #e5e5e5;
+            font-size: 18 px;
+            padding: 8px 4px;
+            text-align: left;
+            white-space: nowrap;
+
+
+        }
+
+        .-hd-util-intellitable-data th.-hd-util-intellitable-sorted {
+            background-color: #d5d5d5;
+
+        }
+
+        .-hd-util-intellitable-data td {
+            background-color: #fff;
+            font-size: 16px;
+            padding: 8px 4px;
+            transition: background-color .5s;
+            white-space: nowrap;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 17 px
+        }
+
+        .-hd-util-intellitable-data td[value="0"],
+        .-hd-util-intellitable-ex-aequo {
+            color: #aaa;
+
+        }
+
+        .-hd-util-intellitable-data tr:nth-child(even) td {
+            background-color: #eee;
+        }
+
+        .-hd-util-intellitable-data tr:hover td {
+            background-color: #ddd;
+        }
+
+        .-hd-util-intellitable-data td.-hd-util-intellitable-sorted {
+            background-color: #f4f4f4;
+        }
+
+        .-hd-util-intellitable-data tr:nth-child(even) td.-hd-util-intellitable-sorted {
+            background-color: #e4e4e4;
+        }
+
+        .-hd-util-intellitable-data tr:nth-child(even):hover td.-hd-util-intellitable-sorted {
+            background-color: #ddd;
+        }
+
+        .-hd-util-intellitable-data .-hd-util-intellitable-numeric-value,
+        .-hd-util-intellitable-data .-hd-util-intellitable-date-value {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+
+
+        }
+
+        .-hd-util-intellitable-rank-value {
+            text-align: right;
+
+        }
+
+        .-hd-util-intellitable-data .-hd-util-intellitable-inline-image {
+            padding: 2px;
+            text-align: center;
+        }
+
+        .-hd-util-intellitable-data .-hd-util-intellitable-inline-image img {
+            height: auto;
+            max-height: 50px;
+            max-width: 50px;
+            min-height: 50px;
+            min-width: 50px;
+            width: auto;
+
+        }
+
+        .-hd-util-intellitable-data .-hd-util-intellitable-no-data td {
+            color: #aaa;
+            text-align: center;
+            transition: none;
+        }
+
+        .-hd-util-intellitable-data .-hd-util-intellitable-no-data td,
+        .-hd-util-intellitable-data tr.-hd-util-intellitable-no-data:hover td {
+            background-color: #eee;
+        }
+
+        .-hd-util-intellitable-scroll-help {
+            color: #aaa;
+            display: none;
+
+        }
+
+        /*
+     * Standings
+     */
+        .-hd-los-standings-medium .-hd-util-intellitable-data .-hd-util-intellitable-inline-image img {
+            max-height: 50px;
+            max-width: 50px;
+            min-height: 50px;
+            min-width: 50px;
+        }
+
+        .-hd-los-standings-medium .-hd-util-intellitable-data th,
+        .-hd-los-standings-medium .-hd-util-intellitable-data td {
+            padding: 4px;
+        }
+
+        .-hd-los-standings .-hd-util-intellitable-data td[value="0"] {
+            color: #000;
+        }
+
+        .-hd-los-standings.-hd-los-standings-unofficial .-hd-los-standings-official-status-text {
+            color: #ccc;
+            font-size: 15px;
+            margin-top: 2px;
+        }
+
+        /*
+     * Schedule
+     */
+        .-hd-los-schedule .-hd-los-schedule-home-team-name,
+        .-hd-los-schedule .-hd-los-schedule-col-homeTeamScore {
+            text-align: right;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 17px
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-col-awayTeamScore {
+            text-align: left;
+            font-size: 15px
+        }
+
+        .-hd-los-schedule .-hd-label-LIVE .-hd-los-schedule-score,
+        .-hd-los-schedule .-hd-label-LIVE .-hd-los-schedule-score-divider {
+            color: #f44;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 15px
+        }
+
+        .-hd-los-schedule .-hd-label-FINISHED .-hd-los-schedule-score,
+        .-hd-los-schedule .-hd-label-FINISHED .-hd-los-schedule-score-divider {
+            color: #000;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 18px
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-overtime,
+        .-hd-los-schedule .-hd-los-schedule-shootout {
+            background-color: #fff;
+            color: #cf102d;
+            display: inline-block;
+            padding: 2px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px
+        }
+
+        .-hd-los-schedule-medium .-hd-util-intellitable-data .-hd-util-intellitable-inline-image img {
+            max-height: 50px;
+            max-width: 50px;
+            min-height: 50px;
+            min-width: 50px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px
+        }
+
+        .-hd-los-schedule-medium .-hd-util-intellitable-data th,
+        .-hd-los-schedule-medium .-hd-util-intellitable-data td {
+            padding: 2px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px
+        }
+
+        /*
+     * Leaders
+     */
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th,
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td {
+            padding: 2px;
+        }
+
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th:nth-child(3),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td:nth-child(3),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th:nth-child(5),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td:nth-child(5),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th:nth-child(6),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td:nth-child(6),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th:nth-child(7),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td:nth-child(7),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th:nth-child(11),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td:nth-child(11),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data th:nth-child(12),
+        .-hd-los-leaders-medium .-hd-util-intellitable-data td:nth-child(12) {
+            display: none;
+        }
+
+        /*
+     * Slider
+     */
+        .-hd-util-slider .-hd-util-slider-inline-image img {
+            height: 40px;
+            width: auto;
+        }
+
+        /*
+     * Game Slider
+     */
+        .-hd-los-game-slider-large .-hd-util-slider {
+            height: 170px;
+            width: 100%;
+        }
+
+        .-hd-los-game-slider-large .-hd-util-slider .-hd-util-slider-group {
+            width: 100%;
+        }
+
+        .-hd-los-game-slider-small .-hd-util-slider {
+            height: 70px;
+            width: 100%;
+        }
+
+        .-hd-los-game-slider-small .-hd-util-slider .-hd-util-slider-group {
+            width: 100%;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-content {
+            left: 16px;
+            right: 16px;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-content .-hd-util-slider-group {
+            width: 100%;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-group table {
+            border-collapse: separate;
+        }
+
+        .-hd-los-game-slider,
+        .-hd-los-game-slider .-hd-util-slider-content td {
+            background: linear-gradient(to bottom, rgba(69, 69, 69, 1) 0%, rgba(43, 43, 43, 1) 100%);
+            color: #fff;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-button.-hd-util-slider-button-disabled span {
+            color: #666;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-button-prev {
+            border-right: 1px solid #222;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-button-next {
+            border-left: 1px solid #666;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-content td {
+            border-left: 1px solid #666;
+            border-right: 1px solid #222;
+            opacity: .75;
+            transition: opacity .5s;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-content td.-hd-label-LIVE {
+            background: linear-gradient(to bottom, #e2001a 0%, #9e001f 100%);
+            opacity: 1;
+        }
+
+        .-hd-los-game-slider .-hd-util-slider-content td:hover {
+            opacity: 1;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-team-name {
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-score {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 24px;
+            margin-top: 14px;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-score-info {
+            font-size: 10px;
+            height: 12px;
+            line-height: 12px;
+            text-align: center;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-score-info span {
+            background-color: #eee;
+            color: #fff;
+            display: inline-block;
+            line-height: 12px;
+            padding: 0 2px;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-info {
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar {
+            margin: 7px 5px 0;
+            text-align: center;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar td,
+        .-hd-los-game-slider-period-bar table tbody tr:nth-child(2n+1) td {
+            background-color: rgba(0, 0, 0, .5);
+            background-image: none;
+            border-left: none;
+            border-right: 2px solid #a20623;
+            height: 6px;
+            padding: 0;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar td:last-child {
+            border-right: none;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar-fill {
+            background-color: #f00;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        .-hd-los-game-slider .-hd-los-game-slider-period-bar .-hd-los-game-slider-period-bar-active .-hd-los-game-slider-period-bar-fill {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateLive;
+            background-color: #f00;
+        }
+
+        .-hd-los-game-slider-period-bar-label {
+            display: none;
+        }
+
+        /*
+     * Full Game Report
+     */
+        .-hd-los-game-full-report-headline {
+            background-color: #eee;
+            border-bottom: 3px solid #666;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .-hd-los-game-full-report-headline .-hd-button-group {
+            float: right;
+            margin-left: 3px;
+            margin-top: -3px;
+        }
+
+        .-hd-los-game-full-report .-hd-util-intellitable-data th {
+            background-color: #e5e5e5;
+            padding: 4px;
+        }
+
+        .-hd-los-game-full-report .-hd-util-intellitable-data td {
+            padding: 4px;
+        }
+
+        .-hd-los-game-full-report-game-info {
+            background: #e5e5e5;
+            border-bottom: 5px solid #d5d5d5;
+            padding: 10px;
+        }
+
+        .-hd-los-game-full-report-game-info:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        .-hd-los-game-full-report-team-home {
+            float: left;
+            width: 33%;
+        }
+
+        .-hd-los-game-full-report-team-away {
+            float: right;
+            width: 33%;
+        }
+
+        .-hd-los-game-full-report-score {
+            margin: 0 auto;
+            text-align: center;
+            width: 33%;
+        }
+
+        .-hd-los-game-full-report-score-home,
+        .-hd-los-game-full-report-score-away {
+            display: inline-block;
+            font-size: 64px;
+            font-weight: bold;
+            height: 95px;
+            line-height: 95px;
+            vertical-align: top;
+            width: 33%;
+        }
+
+        .-hd-los-game-full-report-score-divider {
+            display: inline-block;
+            font-size: 64px;
+            height: 95px;
+            line-height: 60px;
+            vertical-align: top;
+            width: 33%;
+        }
+
+        .-hd-los-game-full-report-score-divider span {
+            border-radius: 4px;
+            color: #fff;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 30px;
+            padding: 0 4px;
+        }
+
+        .-hd-los-game-full-report-game-state {
+            color: #fff;
+            height: 12px;
+            font-size: 10px;
+            line-height: 12px;
+            margin: -10px -10px 10px;
+            text-align: center;
+        }
+
+        .-hd-los-game-full-report-period-bar {
+            border-bottom: 1px solid #fff;
+        }
+
+        .-hd-los-game-full-report-period-bar table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+        }
+
+        .-hd-los-game-full-report-period-bar td,
+        .-hd-los-game-full-report-period-bar table tbody tr:nth-child(2n+1) td {
+            background-color: #555;
+            border-right: 1px solid #fff;
+            height: 12px;
+            padding: 0;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .-hd-los-game-full-report-period-bar td:last-child {
+            border-right: none;
+        }
+
+        .-hd-los-game-full-report-period-bar-fill {
+            background-color: #e5e5e5;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        .-hd-los-game-full-report-period-bar .-hd-los-game-full-report-period-bar-active .-hd-los-game-full-report-period-bar-fill {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateLive;
+            background-color: #f00;
+        }
+
+        .-hd-los-game-full-report-period-bar-label {
+            bottom: 0;
+            color: #aaa;
+            left: 0;
+            line-height: 22px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .-hd-los-game-full-report-period-bar .-hd-los-game-full-report-period-bar-active .-hd-los-game-full-report-period-bar-label {
+            color: #ffff00;
+        }
+
+        .-hd-los-game-full-report-period-stats {
+            opacity: .75;
+            text-align: center;
+        }
+
+        .-hd-los-game-full-report-period-stats>div {
+            height: 24px;
+            line-height: 24px;
+            margin-top: 3px;
+        }
+
+        .-hd-los-game-full-report-period-stats>div>div {
+            background-color: #222;
+            color: #eee;
+            display: inline-block;
+            font-size: 20px;
+            height: 24px;
+            line-height: 24px;
+            margin-right: 1px;
+            overflow: hidden;
+            width: 45px;
+        }
+
+        .-hd-los-game-full-report-period-stats>div>div:first-child {
+            padding-left: 2px;
+            text-align: left;
+        }
+
+        .-hd-los-game-full-report-period-stats>div.-hd-los-game-full-report-period-stats-header>div {
+            background-color: #111;
+            font-weight: bold;
+        }
+
+        .-hd-los-game-full-report-period-stats>div.-hd-los-game-full-report-period-stats-header>div:first-child {
+            background: none;
+        }
+
+        .-hd-los-game-full-report-team-name,
+        .-hd-los-game-full-report-team-logo {
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            width: 50%;
+        }
+
+        .-hd-los-game-full-report-team-logo img {
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+        .-hd-los-game-full-report-team-name {
+            font-size: 48px;
+        }
+
+        .-hd-los-game-full-report-game-facts {
+            background: #ccc;
+            font-size: 14px;
+        }
+
+        .-hd-los-game-full-report-game-fact-row {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .-hd-los-game-full-report-game-fact-label {
+            display: inline-block;
+            text-align: right;
+            width: 40%;
+        }
+
+        .-hd-los-game-full-report-game-fact-label div {
+            background-color: #e5e5e5;
+            margin: 1px 0 0 1px;
+            padding: 3px 5px;
+        }
+
+        .-hd-los-game-full-report-game-fact-value {
+            display: inline-block;
+            width: 60%;
+        }
+
+        .-hd-los-game-full-report-game-fact-value div {
+            padding: 3px 5px;
+        }
+
+        .-hd-los-game-full-report-container {
+            border: 1px solid #aaa;
+            margin: 10px;
+        }
+
+        .-hd-los-game-full-report-container-data {
+            border: 1px solid #ddd;
+            margin: 3px;
+        }
+
+        .-hd-los-game-full-report-team-stats-data .-hd-util-intellitable-data th {
+            text-align: center;
+        }
+
+        .-hd-los-game-full-report-team-stats-data .-hd-util-intellitable-data td:nth-child(2),
+        .-hd-los-game-full-report-team-stats-data .-hd-util-intellitable-data td:nth-child(3) {
+            text-align: center;
+        }
+
+        .-hd-los-game-full-report-goals-player-jersey-no {
+            color: #aaa;
+        }
+
+        .-hd-los-game-full-report-goals-new-score,
+        .-hd-los-game-full-report-goals-scored-by {
+            font-weight: bold;
+        }
+
+        .-hd-los-game-full-report-goal-keeper-changes-action-on {
+            color: green;
+        }
+
+        .-hd-los-game-full-report-goal-keeper-changes-action-on:before {
+            content: "▲ ";
+        }
+
+        .-hd-los-game-full-report-goal-keeper-changes-action-off {
+            color: red;
+        }
+
+        .-hd-los-game-full-report-goal-keeper-changes-action-off:before {
+            content: "▼ ";
+        }
+
+        .-hd-los-game-full-report-lineup {}
+
+        .-hd-los-game-full-report-lineup-headline {
+            border-bottom: 1px dashed #ddd;
+            color: #999;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 12px;
+            margin-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .-hd-los-game-full-report-lineup-players {
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .-hd-los-game-full-report-lineup-player {
+            background-color: #eee;
+            color: #666;
+            display: inline-block;
+            height: 35px;
+            margin: 10px;
+            width: 220px;
+        }
+
+        .-hd-los-game-full-report-lineup-player-jersey-no {
+            background-color: #ddd;
+            border-right: 1px solid #fff;
+            color: #888;
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 35px;
+            width: 35px;
+        }
+
+        .-hd-los-game-full-report-lineup-player-name {
+            font-size: 13px;
+            line-height: 18px;
+            margin-left: 40px;
+            overflow: hidden;
+            padding-top: 2px;
+            text-align: left;
+            white-space: nowrap;
+            width: 180px;
+        }
+
+        .-hd-los-game-full-report-lineup-player-position {
+            font-size: 11px;
+            line-height: 13px;
+            margin-left: 40px;
+            text-align: left;
+            white-space: nowrap;
+            width: 180px;
+        }
+
+        .-hd-los-game-full-report-penalty-shot,
+        .-hd-los-game-full-report-game-winning-goal {
+            background-color: #999;
+            border-radius: 2px;
+            color: #fff;
+            display: inline-block;
+            padding: 0 1px;
+        }
+
+        /*
+     * Full Team Page
+     */
+        .-hd-los-team-full-page-team-info {
+            background: #e5e5e5;
+            border-bottom: 5px solid #d5d5d5;
+            height: 120px;
+            padding: 10px;
+        }
+
+        .-hd-los-team-full-page-team-logo {
+            float: left;
+            height: 100px;
+            margin: -10px;
+            padding: 10px;
+            width: 100px;
+        }
+
+        .-hd-los-team-full-page-team-logo img {
+            max-height: 100px;
+            max-width: 100px;
+        }
+
+        .-hd-los-team-full-page-team-short-name {
+            font-size: 48px;
+            font-weight: bold;
+            height: 54px;
+            line-height: 54px;
+            margin-left: 140px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            vertical-align: bottom;
+        }
+
+        .-hd-los-team-full-page-team-long-name {
+            font-size: 20px;
+            font-weight: bold;
+            height: 24px;
+            line-height: 24px;
+            margin-left: 140px;
+            text-transform: uppercase;
+        }
+
+        .-hd-los-team-full-page-team-picture {}
+
+        .-hd-los-team-full-page-team-picture img {
+            height: auto;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        .-hd-los-team-full-page-container {
+            border: 1px solid #aaa;
+            margin: 10px;
+        }
+
+        .-hd-los-team-full-page-container-data {
+            border: 1px solid #ddd;
+            margin: 3px;
+        }
+
+        .-hd-los-team-full-page-headline {
+            background-color: #eee;
+            border-bottom: 3px solid #666;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .-hd-los-team-full-page-roster-overview {
+            text-align: center;
+        }
+
+        .-hd-los-team-full-page-roster-player-container {
+            background-color: #eee;
+            display: inline-block;
+            margin: 15px;
+            width: 230px;
+        }
+
+        .-hd-los-team-full-page-roster-player-portrait {
+            background-color: #eee;
+            height: 170px;
+            overflow: hidden;
+            transition: background .5s;
+            width: 230px;
+        }
+
+        .-hd-los-team-full-page-roster-player-container:hover .-hd-los-team-full-page-roster-player-portrait {
+            background-color: #aaa;
+        }
+
+        .-hd-los-team-full-page-roster-player-portrait img {
+            height: 140px;
+            margin-top: 30px;
+            transition: height .5s, width .5s;
+            width: 100px;
+        }
+
+        .-hd-los-team-full-page-roster-player-container:hover .-hd-los-team-full-page-roster-player-portrait img {
+            height: 280px;
+            width: 200px;
+        }
+
+        .-hd-los-team-full-page-roster-player-details {
+            background-color: #ddd;
+            height: 45px;
+        }
+
+        .-hd-los-team-full-page-roster-player-jersey-no {
+            background-color: #d4d4d4;
+            color: #fff;
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            height: 45px;
+            line-height: 45px;
+            width: 45px;
+        }
+
+        .-hd-los-team-full-page-roster-player-name {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            margin-left: 50px;
+            overflow: hidden;
+            padding-top: 4px;
+            text-align: left;
+            white-space: nowrap;
+            width: 180px;
+        }
+
+        .-hd-los-team-full-page-roster-player-position {
+            color: #ddd;
+            font-size: 11px;
+            line-height: 13px;
+            margin-left: 50px;
+            text-align: left;
+            white-space: nowrap;
+            width: 180px;
+        }
+
+        .-hd-los-team-full-page-games-state {
+            background-color: #000;
+            border-radius: 4px;
+            color: #fff;
+            display: inline-block;
+            min-width: 30px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .-hd-los-team-full-page-games-state-W {
+            background-color: #4c4;
+        }
+
+        .-hd-los-team-full-page-games-state-OTW {
+            background-color: #484;
+        }
+
+        .-hd-los-team-full-page-games-state-L {
+            background-color: #c44;
+        }
+
+        .-hd-los-team-full-page-games-state-OTL {
+            background-color: #844;
+        }
+
+        .-hd-los-team-full-page-games-state-T {
+            background-color: #888;
+        }
+
+        .-hd-los-team-full-page-games .-hd-label-LIVE .-hd-los-team-full-page-games-score {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateLive;
+            background-color: #f00;
+            color: #fff;
+        }
+
+        .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data td {
+            transition: none;
+            vertical-align: top;
+        }
+
+        .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data tr:hover td {
+            background-color: #f9f9f9;
+        }
+
+        .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data tr:nth-child(even) td {
+            background-color: #eee;
+        }
+
+        .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data tr:nth-child(even) td {
+            background-color: #eee;
+        }
+
+        .-hd-los-team-full-page-team-facts-table .-hd-util-intellitable-data tr.-hd-los-team-full-page-team-facts-table-header-row td {
+            background-color: #888;
+            color: #fff;
+        }
+
+        /*
+     * Full Player Page
+     */
+        .-hd-los-player-full-page-player-info {
+            background: #e5e5e5;
+            border-bottom: 5px solid #d5d5d5;
+            /*height: 100px;*/
+            padding: 10px;
+        }
+
+        .-hd-los-player-full-page-team-logo {
+            float: right;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+        }
+
+        .-hd-los-player-full-page-team-logo img {
+            max-height: 100px;
+            max-width: 100px;
+        }
+
+        .-hd-los-player-full-page-player-portrait {
+            float: left;
+            height: 100px;
+            overflow: hidden;
+            padding: 20px 20px 0 10px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .-hd-los-player-full-page-player-portrait img {
+            height: 100px;
+            width: 72px;
+        }
+
+        .-hd-los-player-full-page-player-name {
+            font-size: 32px;
+            font-weight: bold;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 110px;
+            margin-top: 36px;
+            overflow: hidden;
+            text-transform: uppercase;
+            vertical-align: bottom;
+            white-space: nowrap;
+        }
+
+        .-hd-los-player-full-page-player-jersey-no {
+            background-color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            height: 24px;
+            line-height: 24px;
+            margin-left: 10px;
+            min-width: 24px;
+            padding: 0 4px;
+            text-align: center;
+        }
+
+        .-hd-los-player-full-page-player-position {
+            display: inline-block;
+            font-size: 20px;
+            height: 24px;
+            line-height: 24px;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        .-hd-los-player-full-page-container {
+            border: 1px solid #aaa;
+            margin: 10px;
+        }
+
+        .-hd-los-player-full-page-container-data {
+            border: 1px solid #ddd;
+            margin: 3px;
+        }
+
+        .-hd-los-player-full-page-headline {
+            background-color: #eee;
+            border-bottom: 3px solid #666;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .-hd-los-player-full-page-player-facts {
+            background: #ccc;
+            font-size: 11px;
+        }
+
+        .-hd-los-player-full-page-player-fact-row {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .-hd-los-player-full-page-player-fact-label {
+            display: inline-block;
+            text-align: right;
+            width: 40%;
+        }
+
+        .-hd-los-player-full-page-player-fact-label div {
+            background-color: #e5e5e5;
+            margin: 1px 0 0 1px;
+            padding: 3px 5px;
+        }
+
+        .-hd-los-player-full-page-player-fact-value {
+            display: inline-block;
+            font-weight: bold;
+            width: 60%;
+        }
+
+        .-hd-los-player-full-page-player-fact-value div {
+            padding: 3px 5px;
+        }
+
+        .-hd-los-player-full-page-games-state {
+            background-color: #000;
+            border-radius: 4px;
+            color: #fff;
+            display: inline-block;
+            min-width: 30px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .-hd-los-player-full-page-games-state-W {
+            background-color: #4c4;
+        }
+
+        .-hd-los-player-full-page-games-state-OTW {
+            background-color: #484;
+        }
+
+        .-hd-los-player-full-page-games-state-L {
+            background-color: #c44;
+        }
+
+        .-hd-los-player-full-page-games-state-OTL {
+            background-color: #844;
+        }
+
+        .-hd-los-player-full-page-games-state-T {
+            background-color: #888;
+        }
+
+        .-hd-los-player-full-page-games .-hd-label-LIVE .-hd-los-player-full-page-games-score {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateLive;
+            background-color: #f00;
+            color: #fff;
+        }
+
+        /*
+     * Tabs
+     */
+        .-hd-util-tabs {
+            margin-top: 30px;
+        }
+
+        .-hd-util-tabs-buttons {
+            border-bottom: 1px solid #aaa;
+            text-align: center;
+        }
+
+        .-hd-util-tabs-button {
+            background-color: #eee;
+            background-image: linear-gradient(to bottom, #eeeeee 0, #dddddd 100%);
+            border: 1px solid #ccc;
+            border-bottom: 0;
+            color: #888;
+            display: inline-block;
+            line-height: 30px;
+            margin-right: 1px;
+            min-width: 80px;
+            padding: 0 10px;
+            text-decoration: none;
+            vertical-align: bottom;
+        }
+
+        .-hd-util-tabs-button:hover {
+            background-color: #ddd;
+            background-image: linear-gradient(to bottom, #eeeeee 0, #cccccc 100%);
+            text-decoration: none;
+        }
+
+        .-hd-util-tabs-button-active {
+            background-color: #ddd;
+            background-image: linear-gradient(to bottom, #eeeeee 0, #cccccc 100%);
+            line-height: 32px;
+        }
+
+        .-hd-util-tabs-content {}
+
+        .-hd-util-tabs-pane {
+            display: none;
+        }
+
+        .-hd-util-tabs-pane-active {
+            display: block;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs {
+            margin-top: 10px;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs-buttons {
+            border-bottom: none;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs-button {
+            border-bottom: 1px solid #ccc;
+            border-right: 0;
+            line-height: 20px;
+            margin-right: 0;
+            min-width: 60px;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs-button:last-child {
+            border-right: 1px solid #ccc;
+        }
+
+        .-hd-util-tabs-pane .-hd-util-tabs-button-active {
+            line-height: 20px;
+        }
+
+        /*
+     * Game Live Box
+     */
+        .-hd-widget.-hd-los-game-live-box-wrapper {
+            display: inline-block;
+            margin: 10px 5px;
+            width: 390px;
+        }
+
+        .-hd-los-game-live-box {
+            border: 1px solid #e5e5e5;
+        }
+
+        .-hd-los-game-live-box-game-info {
+            background: #e5e5e5;
+            height: 80px;
+            padding: 5px;
+        }
+
+        .-hd-los-game-live-box-team-home {
+            float: left;
+            position: relative;
+            width: 25%;
+        }
+
+        .-hd-los-game-live-box-team-away {
+            float: right;
+            position: relative;
+            width: 25%;
+        }
+
+        .-hd-los-game-live-box-score {
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+        }
+
+        .-hd-los-game-live-box-score-home,
+        .-hd-los-game-live-box-score-away {
+            display: inline-block;
+            font-size: 38px;
+            font-weight: bold;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            vertical-align: top;
+            width: 40%;
+        }
+
+        .-hd-los-game-live-box-score-divider {
+            display: inline-block;
+            font-size: 12px;
+            height: 70px;
+            line-height: 70px;
+            vertical-align: top;
+            width: 20%;
+        }
+
+        .-hd-los-game-live-box-score-divider span {
+            background-color: #000;
+            border-radius: 2px;
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 0 4px;
+        }
+
+        .-hd-los-game-live-box-team-name {
+            font-size: 10px;
+            height: 14px;
+            left: 0;
+            line-height: 14px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+        }
+
+        .-hd-los-game-live-box-team-logo {
+            height: 50px;
+            margin-top: 14px;
+            text-align: center;
+        }
+
+        .-hd-los-game-live-box-team-logo img {
+            max-height: 50px;
+            max-width: 50px;
+        }
+
+        .-hd-los-game-live-box-game-state {
+            background-color: #000;
+            color: #fff;
+            height: 12px;
+            font-size: 10px;
+            line-height: 12px;
+            margin: -5px -5px 5px;
+            text-align: center;
+        }
+
+        .-hd-los-game-live-box-period-bar {
+            border: 1px solid #fff;
+        }
+
+        .-hd-los-game-live-box-period-bar table {
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .-hd-los-game-live-box-period-bar td {
+            background-color: #555;
+            border-right: 1px solid #fff;
+            height: 12px;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .-hd-los-game-live-box-period-bar td:last-child,
+        .-hd-los-game-live-box-period-bar table tbody tr:nth-child(2n+1) td:last-child {
+            border-right: none;
+        }
+
+        .-hd-los-game-live-box-period-bar-fill {
+            background-color: #e5e5e5;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        .-hd-los-game-live-box-period-bar .-hd-los-game-live-box-period-bar-active .-hd-los-game-live-box-period-bar-fill {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateLive;
+            background-color: #f00;
+        }
+
+        .-hd-los-game-live-box-period-bar-label {
+            bottom: 0;
+            color: #aaa;
+            left: 0;
+            line-height: 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .-hd-los-game-live-box-period-bar .-hd-los-game-live-box-period-bar-active .-hd-los-game-live-box-period-bar-label {
+            color: #ffff00;
+        }
+
+        .-hd-los-game-live-box-period-stats {
+            background-color: #333;
+            display: table;
+            table-layout: fixed;
+            text-align: center;
+            width: 100%;
+        }
+
+        .-hd-los-game-live-box-period-stats>div {
+            display: table-row;
+        }
+
+        .-hd-los-game-live-box-period-stats>div>div {
+            color: #ddd;
+            display: table-cell;
+            font-size: 10px;
+            height: 14px;
+            line-height: 14px;
+            overflow: hidden;
+            width: 2%;
+        }
+
+        .-hd-los-game-live-box-period-stats>div>div:first-child {
+            padding-left: 2px;
+            text-align: left;
+        }
+
+        .-hd-los-game-live-box-period-stats>div.-hd-los-game-live-box-period-stats-header>div {
+            background-color: #000;
+            font-weight: bold;
+        }
+
+        .-hd-los-game-live-box-tabs {
+            height: 250px;
+            margin: 0;
+            position: relative;
+        }
+
+        .-hd-los-game-live-box-tabs .-hd-util-tabs-buttons {
+            border-bottom: 0;
+            bottom: 0;
+            display: table;
+            height: 17px;
+            left: 0;
+            line-height: 16px;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            table-layout: fixed;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .-hd-los-game-live-box-tabs .-hd-util-tabs-button {
+            background-image: none;
+            border: none;
+            border-top: 1px solid #ddd;
+            display: table-cell;
+            line-height: 16px;
+            margin-right: 0;
+            min-width: 0;
+            padding: 0;
+            text-align: center;
+            width: 2%;
+        }
+
+        .-hd-los-game-live-box-tabs .-hd-util-tabs-button:hover {
+            background-color: #fff;
+            background-image: none;
+        }
+
+        .-hd-los-game-live-box-tabs .-hd-util-tabs-button-active {
+            background-color: #fff;
+            background-image: none;
+            border-top: 1px solid #fff;
+            line-height: 16px;
+        }
+
+        .-hd-los-game-live-box-tabs .-hd-util-tabs-content {
+            bottom: 17px;
+            left: 0;
+            overflow: auto;
+            position: absolute;
+            right: 0;
+            top: 1px;
+        }
+
+        .-hd-los-game-live-box .-hd-util-intellitable-data th,
+        .-hd-los-game-live-box .-hd-util-intellitable-data td {
+            font-size: 11px;
+            padding: 2px;
+        }
+
+        .-hd-los-game-live-box-team-stats .-hd-util-intellitable-data th,
+        .-hd-los-game-live-box-team-stats .-hd-util-intellitable-data td:nth-child(2),
+        .-hd-los-game-live-box-team-stats .-hd-util-intellitable-data td:nth-child(3) {
+            text-align: center;
+        }
+
+        .-hd-los-game-live-box-game-fact-row {
+            font-size: 11px;
+            margin-top: 1px;
+        }
+
+        .-hd-los-game-live-box-game-fact-label {
+            display: inline-block;
+            text-align: right;
+            width: 40%;
+        }
+
+        .-hd-los-game-live-box-game-fact-label div {
+            background-color: #eee;
+            padding: 2px 4px 2px 0;
+        }
+
+        .-hd-los-game-live-box-game-fact-value {
+            display: inline-block;
+            width: 60%;
+        }
+
+        .-hd-los-game-live-box-game-fact-value div {
+            background-color: #f9f9f9;
+            padding: 2px 0 2px 4px;
+        }
+
+        .-hd-los-game-live-box-ticker {
+            line-height: 1em;
+        }
+
+        .-hd-los-game-live-box-ticker-action {
+            clear: both;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        .-hd-los-game-live-box-ticker-action-team-logo {
+            float: left;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: top;
+            width: 50px;
+        }
+
+        .-hd-los-game-live-box-ticker-action-team-logo img {
+            height: auto;
+            max-height: 40px;
+            max-width: 40px;
+            min-height: 40px;
+            min-width: 40px;
+            width: auto;
+        }
+
+        .-hd-los-game-live-box-ticker-action-headline {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 5px;
+            padding: 6px 0 2px 2px;
+            vertical-align: top;
+            width: 170px;
+        }
+
+        .-hd-los-game-live-box-ticker-action-body {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 3px 0 0 2px;
+            vertical-align: top;
+            width: 170px;
+        }
+
+        /*
+     * Knockout Stage
+     */
+        .entry tr td.-hd-los-knockout-stage-phase {
+            border-right: 1px solid rgba(0, 0, 0, .05);
+            padding: 50px 4px 4px;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .-hd-los-knockout-stage-phase:last-child {
+            border-right: none;
+        }
+
+        .-hd-los-knockout-stage-phase-header {
+            border-bottom: 3px solid rgba(0, 0, 0, .3);
+            font-size: 18px;
+            font-weight: bold;
+            left: 0;
+            margin: 0 4px;
+            overflow: hidden;
+            padding: 4px 8px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            text-transform: uppercase;
+            top: 0;
+            white-space: nowrap;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-header {
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-info {
+            background-color: rgba(0, 0, 0, .05);
+            border-bottom: 2px solid rgba(0, 0, 0, .3);
+            border-left: 1px solid rgba(0, 0, 0, .3);
+            border-right: 1px solid rgba(0, 0, 0, .3);
+            padding: 2px 4px 4px;
+            text-align: center;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-team-a {
+            float: left;
+            width: 30%;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-team-b {
+            float: right;
+            width: 30%;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-score {
+            margin: 0 auto;
+            width: 40%;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-score>div {
+            display: inline-block;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 28px;
+            padding-top: 10px;
+            text-align: center;
+            width: 40%;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-score>div.-hd-los-knockout-stage-phase-encounter-score-divider {
+            opacity: .5;
+            width: 20%;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-standings {
+            font-size: 10px;
+            margin: 0 auto;
+            opacity: .5;
+            text-align: center;
+            width: 40%;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-team-logo img {
+            height: auto;
+            max-height: 60px;
+            max-width: 60px;
+            min-height: 60px;
+            min-width: 60px;
+            width: auto;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-info:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-games {
+            border: 1px solid rgba(0, 0, 0, .3);
+            margin-bottom: 10px;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-games .-hd-util-intellitable-data td {
+            font-size: 10px;
+            padding: 1px;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-games .-hd-util-intellitable-data .-hd-los-knockout-stage-phase-encounter-game-optional td {
+            opacity: .5;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-games .-hd-label-LIVE .-hd-los-knockout-stage-score,
+        .-hd-los-knockout-stage-phase-encounter-games .-hd-label-LIVE .-hd-los-knockout-stage-score-divider {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: pulsateLive;
+            background-color: #f00;
+            color: #fff;
+        }
+
+        .-hd-los-knockout-stage-phase-encounter-games .-hd-los-knockout-stage-overtime,
+        .-hd-los-knockout-stage-phase-encounter-games .-hd-los-knockout-stage-shootout {
+            background-color: rgba(0, 0, 0, .2);
+            color: #fff;
+            display: inline-block;
+            padding: 2px;
+        }
+
+        /*
+     * Media Queries
+     */
+        /* 0 - 480 */
+        @media only screen and (max-width: 480px) {
+
+            /*
+                                                                                                         * Buttons
+                                                                                                         */
+            .-hd-button {
+                min-width: 40px;
+                padding: 2px;
+            }
+
+            /*
+                                                                                                         * Tabs
+                                                                                                         */
+            .-hd-util-tabs-button {
+                min-width: 30px;
+                padding: 0 4px;
+            }
+
+            /*
+                                                                                                         * IntelliTable
+                                                                                                         */
+            .-hd-util-intellitable-data th {
+                padding: 2px 1px;
+            }
+
+            .-hd-util-intellitable-data td {
+                padding: 2px 1px;
+            }
+
+            .-hd-util-intellitable-data .-hd-util-intellitable-inline-image img {
+                height: auto;
+                max-height: 15px;
+                max-width: 15px;
+                min-height: 15px;
+                min-width: 15px;
+                width: auto;
+            }
+
+            /*
+                                                                                                         * Schedule
+                                                                                                         */
+            .-hd-los-schedule .-hd-los-schedule-score,
+            .-hd-los-schedule .-hd-los-schedule-score-divider {
+                font-size: 1em;
+                font-weight: normal;
+            }
+
+            .-hd-los-schedule .-hd-los-schedule-team-name-short {
+                display: table-cell;
+            }
+
+            .-hd-los-schedule .-hd-los-schedule-team-name-long {
+                display: none;
+            }
+
+            /*
+                                                                                                         * Slider
+                                                                                                         */
+            .-hd-util-slider .-hd-util-slider-inline-image {
+                display: none;
+            }
+
+            /*
+                                                                                                         * Game Slider
+                                                                                                         */
+            .-hd-los-game-slider .-hd-los-game-slider-score {
+                clear: both;
+                line-height: 30px;
+            }
+
+            /*
+                                                                                                         * Full Game Report
+                                                                                                         */
+            .-hd-los-game-full-report-team-name,
+            .-hd-los-game-full-report-team-logo {
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .-hd-los-game-full-report-team-logo img {
+                max-height: 30px;
+                max-width: 30px;
+            }
+
+            .-hd-los-game-full-report-team-name {
+                font-size: 24px;
+            }
+
+            .-hd-los-game-full-report-score-home,
+            .-hd-los-game-full-report-score-divider,
+            .-hd-los-game-full-report-score-away {
+                font-size: 24px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .-hd-los-game-full-report-score-divider {
+                line-height: 24px;
+            }
+
+            .-hd-los-game-full-report-score-divider span {
+                border-radius: 2px;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0 2px;
+            }
+
+            .-hd-los-game-full-report-period-stats {
+                margin-top: 10px;
+            }
+
+            .-hd-los-game-full-report-container {
+                margin: 5px 0;
+            }
+
+            .-hd-los-game-full-report-container-data {
+                margin: 0;
+            }
+
+            .-hd-los-game-full-report-game-fact-row {
+                width: 100%;
+            }
+
+            .-hd-los-team-full-page-team-short-name {
+                margin-left: 120px;
+                margin-top: 0;
+            }
+
+            .-hd-los-team-full-page-team-long-name {
+                margin-left: 120px;
+            }
+
+            .-hd-los-team-full-page-container {
+                margin: 5px 0;
+            }
+
+            .-hd-los-team-full-page-container-data {
+                margin: 0;
+            }
+
+            .-hd-los-team-full-page-team-fact-row {
+                width: 100%;
+            }
+
+            /*
+                                                                                                         * Full Player Page
+                                                                                                         */
+            .-hd-los-player-full-page-player-info {
+                height: 35px;
+            }
+
+            .-hd-los-player-full-page-team-logo {
+                height: 50px;
+                margin: 10px;
+                padding: 4px;
+                width: 50px;
+            }
+
+            .-hd-los-player-full-page-team-logo img {
+                max-height: 50px;
+                max-width: 50px;
+            }
+
+            .-hd-los-player-full-page-player-portrait {
+                height: 50px;
+                padding: 5px 0 0;
+                width: 50px;
+            }
+
+            .-hd-los-player-full-page-player-portrait img {
+                height: 50px;
+                transition: none;
+                width: 36px;
+            }
+
+            .-hd-los-player-full-page-player-name {
+                font-size: 14px;
+                height: 20px;
+                line-height: 20px;
+                margin: 2px 50px 0 40px;
+            }
+
+            .-hd-los-player-full-page-player-jersey-no {
+                font-size: 12px;
+                height: 14px;
+                line-height: 14px;
+            }
+
+            .-hd-los-player-full-page-player-position {
+                font-size: 12px;
+                height: 14px;
+                line-height: 14px;
+            }
+
+            .-hd-los-player-full-page-container {
+                margin: 5px 0;
+            }
+
+            .-hd-los-player-full-page-container-data {
+                margin: 0;
+            }
+
+            .-hd-los-player-full-page-player-fact-row {
+                width: 100%;
+            }
+
+            /*
+                                                                                                         * Leaders
+                                                                                                         */
+            .-hd-los-leaders .-hd-los-leaders-col-playerName {
+                white-space: normal;
+            }
+
+            /*
+                                                                                             * Knockout Stage
+                                                                                             */
+            .-hd-los-knockout-stage-phase {
+                display: block;
+            }
+        }
+
+        /* 481 - 767 */
+        @media only screen and (min-width: 481px) and (max-width: 767px) {
+            .-hd-los-schedule .-hd-los-schedule-team-name-short {
+                display: table-cell;
+            }
+
+            .-hd-los-schedule td.-hd-los-schedule-team-name-short {
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            .-hd-los-schedule .-hd-los-schedule-team-name-long {
+                display: none;
+            }
+            .-hd-los-game-full-report-team-name,
+            .-hd-los-game-full-report-team-logo {
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .-hd-los-game-full-report-team-logo img {
+                max-height: 30px;
+                max-width: 30px;
+            }
+
+            .-hd-los-game-full-report-team-name {
+                font-size: 24px;
+            }
+
+            .-hd-los-game-full-report-score-home,
+            .-hd-los-game-full-report-score-divider,
+            .-hd-los-game-full-report-score-away {
+                font-size: 24px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .-hd-los-game-full-report-score-divider {
+                line-height: 24px;
+            }
+
+            .-hd-los-game-full-report-score-divider span {
+                border-radius: 2px;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0 2px;
+            }
+
+            .-hd-los-game-full-report-period-stats {
+                margin-top: 10px;
+            }
+
+            .-hd-los-game-full-report-game-fact-row {
+                width: 100%;
+            }
+
+            /*
+                                                                                                         * Full Team Page
+                                                                                                         */
+            .-hd-los-team-full-page-team-fact-row {
+                width: 100%;
+            }
+
+            /*
+                                                                                                         * Full Player Page
+                                                                                                         */
+            .-hd-los-player-full-page-player-info {
+                height: 60px;
+            }
+
+            .-hd-los-player-full-page-team-logo {
+                height: 75px;
+                margin: 10px;
+                padding: 4px;
+                width: 75px;
+            }
+
+            .-hd-los-player-full-page-team-logo img {
+                max-height: 75px;
+                max-width: 75px;
+            }
+
+            .-hd-los-player-full-page-player-portrait {
+                height: 75px;
+                padding: 5px 0 0;
+                width: 75px;
+            }
+
+            .-hd-los-player-full-page-player-portrait img {
+                height: 75px;
+                transition: none;
+                width: 54px;
+            }
+
+            .-hd-los-player-full-page-player-name {
+                font-size: 20px;
+                height: 24px;
+                line-height: 24px;
+                margin: 20px 80px 0 65px;
+            }
+
+            .-hd-los-player-full-page-player-jersey-no {
+                font-size: 12px;
+                height: 14px;
+                line-height: 14px;
+            }
+
+            .-hd-los-player-full-page-player-position {
+                font-size: 12px;
+                height: 14px;
+                line-height: 14px;
+            }
+
+            .-hd-los-player-full-page-player-fact-row {
+                width: 100%;
+            }
+
+            /*
+                                                                                             * Knockout Stage
+                                                                                             */
+            .-hd-los-knockout-stage-phase {
+                display: block;
+            }
+        }
+
+        /* 768 - 979 */
+        @media only screen and (min-width: 768px) and (max-width: 979px) {
+
+            .-hd-util-slider .-hd-util-slider-inline-image {
+                display: none;
+            }
+
+            .-hd-los-game-slider .-hd-los-game-slider-score {
+                line-height: 30px;
+            }
+
+            .-hd-los-game-full-report-container {
+                margin: 5px 0;
+            }
+
+            .-hd-los-game-full-report-container-data {
+                margin: 1px;
+            }
+
+            .-hd-los-team-full-page-container {
+                margin: 5px 0;
+            }
+
+            .-hd-los-team-full-page-container-data {
+                margin: 1px;
+            }
+
+            .-hd-los-player-full-page-container {
+                margin: 5px 0;
+            }
+
+            .-hd-los-player-full-page-container-data {
+                margin: 1px;
+            }
+        }
+
+        /*
+     * Animations
+     */
+        @keyframes pulsateLive {
+            0% {
+                background-color: #f00;
+            }
+
+            50% {
+                background-color: #a00;
+            }
+
+            100% {
+                background-color: #f00;
+            }
+        }
+
+        .entry-content {
+            padding: 0 !important;
+        }
+        .thrv_wrapper[consent-cb-reset-parent="1"]::before {
+            display: none !important;
+        }
+
+        .jet-video[consent-cb-reset-parent="1"]>.jet-video__overlay {
+            display: none !important;
+        }
+
+        .et_pb_video[consent-cb-reset-parent="1"]>.et_pb_video_overlay {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+div+.et_pb_video_overlay {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+.ultv-video {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+.elementor-widget-container {
+            display: none !important;
+        }
+
+        .wp-block-embed__wrapper[consent-cb-reset-parent="1"]>.ast-oembed-container {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+.wpgb-facet {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+.td_wrapper_video_playlist {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+div[class^="lyte-"] {
+            display: none !important;
+        }
+
+        .elementor-fit-aspect-ratio[consent-cb-reset-parent="1"]>.elementor-custom-embed-image-overlay {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+.vc_column-inner {
+            display: none !important;
+        }
+
+        .rcb-content-blocker+.bt_bb_google_maps {
+            display: none !important;
+        }
+
+        .ou-aspect-ratio[consent-cb-reset-parent="1"]>.ou-video-image-overlay {
+            display: none !important;
+        }
+
+        .wp-block-embed__wrapper[consent-cb-reset-parent="1"]::before {
+            padding-top: 0 !important;
+        }
+
+        .wpb_video_widget[consent-cb-reset-parent="1"] .wpb_video_wrapper {
+            padding-top: 0 !important;
+        }
+
+        .tve_responsive_video_container[consent-cb-reset-parent="1"] {
+            padding-bottom: 0 !important;
+        }
+
+        .x-frame-inner[consent-cb-reset-parent="1"]>div.x-video {
+            position: initial !important;
+        }
+
+        .avia-video[consent-cb-reset-parent="1"] .avia-iframe-wrap {
+            position: initial !important;
+        }
+
+        .jet-video[consent-cb-reset-parent="1"] {
+            background: none !important;
+        }
+
+        .tve_responsive_video_container[consent-cb-reset-parent="1"] .rcb-content-blocker>div>div>div {
+            border-radius: 0 !important;
+        }
+
+        .elementor-widget-wrap>[consent-blocker-connected][consent-required] {
+            flex-grow: 1;
+            width: 100%;
+        }
+
+
+        #divGameData {
+            padding-top: 10px;
+        }
+
+        .sv_title_flex {
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sv_links_title {
+            float: left;
+            width: 25%;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-align: center;
+            color: var(--e-global-color-primary );
+            font-family: "Heebo", Sans-serif !important;
+            font-size: 30px;
+            line-height: 1.2em;
+        }
+
+        .sv_title_flex img {
+            max-width: 150px;
+        }
+
+        .sv_mitte_title {
+            overflow: auto;
+            width: 50%;
+            text-align: center;
+            color: var(--e-global-color-text );
+        }
+
+        .sv_rechts_title {
+            float: right;
+            width: 25%;
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: auto;
+            flex: auto;
+            color: var(--e-global-color-primary );
+            font-family: "Heebo", Sans-serif !important;
+            font-size: 30px;
+            line-height: 1.2em;
+        }
+
+        .divScore {
+            font-size: 80px;
+            font-weight: 800;
+            color: var(--e-global-color-primary );
+        }
+
+        @media (max-width: 767px) {
+            .sv_title_flex {
+            font-size: 10px;
+            }
+
+            .divScore {
+                font-size: 32px;
+                font-weight: 800;
+            }
+
+            .sv_title_flex img {
+                max-width: 75px;
+            }
+
+            .sv_links_title, .sv_rechts_title {
+                width: 33.333%;
+                font-size: 16px;
+            }
+
+            .sv_mitte_title {
+                width: 33.333%;
+            }
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-game-info {
+            border-bottom: 5px solid transparent;
+            padding: 10px;
+            position: relative;
+        }
+
+        .-hd-rd-mobile .-hd-los-game-full-report .-hd-los-game-full-report-period-stats {
+            display: table;
+            width: 100%;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .-hd-rd-mobile .-hd-los-game-full-report .-hd-los-game-full-report-period-stats > div {
+            display: table-row;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats > div {
+            margin-top: 1px;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats > div.-hd-los-game-full-report-period-stats-header > div {
+            font-weight: 800;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats > div > div:first-child {
+            padding-left: 4px;
+            text-align: left;
+        }
+
+        .-hd-rd-mobile .-hd-los-game-full-report .-hd-los-game-full-report-period-stats > div > div {
+            display: table-cell;
+            min-width: 40px;
+        }
+
+        .-hd-los-game-full-report .-hd-los-game-full-report-period-stats > div > div {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 18px;
+            margin-right: 1px;
+            min-width: 80px;
+            overflow: hidden;
+        }
+
+        .true, .false {
+            visibility: visible;
+        }
+
+        .live {
+            visibility: hidden;
+        }

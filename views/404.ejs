@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page not Found | LEV MV</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"><img src="/images/lev.png" height="90%" alt=""></div>
+            LEV MV
+          </a>
+          <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>">Startseite</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/spielplan">Spielplan</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/tabelle">Tabelle</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/<%= liga === 'u15' ? 'ostseeliga' : 'u15' %>"><%= liga == 'u15' ? 'Ostseeliga' : 'U13 / U15' %></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div style="text-align: center; font-size: 25px; font-weight: bold; margin-top: 20vh;">
+        404 - Page not found <br>
+        Dieses Spiel ist wahrscheinlich noch nicht freigeschaltet worden! Versuche es wenn das Spiel live ist oder wenn das Spiel vorbei ist!
+      </div>
+</body>
+</html>

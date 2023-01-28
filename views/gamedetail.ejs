@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spieldetails | LEV MV</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/game.css">
+    <link rel='stylesheet' id='tablepress-default-css' href='https://www.nordverbund.info/wp-content/plugins/tablepress/css/default.min.css?ver=1.14' media='all' />
+    <script src="https://www.nordverbund.info/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
+    <script src="https://www.nordverbund.info/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"><img src="/images/lev.png" height="90%" alt=""></div>
+                LEV MV
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/">Startseite</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/spielplan">Spielplan</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/tabelle">Tabelle</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga == 'u15' ? 'ostseeliga' : 'u15' %>">
+                            <%= liga=='u15' ? 'Ostseeliga' : 'U13 / U15' %>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="divGameData">
+        <div class="sv_title_flex">
+            <div class="sv_links_title TeamLogo"><a href="#"><img decoding="async"
+                        src="/images/tn_<%= data.home.logo %>.png"></a></div>
+            <div class="sv_mitte_title divScore"><%= goalsHome.length %> : <%= goalsAway.length %></div>
+            <div class="sv_rechts_title TeamLogo"><a href="#"><img decoding="async"
+                        src="/images/tn_<%= data.away.logo %>.png"></a></div>
+        </div>
+        <div class="sv_title_flex">
+            <div class="sv_links_title"><b><%= data.home.name %></b></div>
+            <div class="sv_mitte_title"><%= data.stadion %></div>
+            <div class="sv_rechts_title"><b><%= data.away.name %></b></div>
+        </div>
+    </div>
+
+    <div class="-hd-los-game-full-report-period-stats">
+        <div class="-hd-los-game-full-report-period-stats-header">
+            <div>&nbsp;</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>OT</div>
+        </div>
+        <div class="-hd-los-game-full-report-period-stats-score">
+            <div>Spielstand</div>
+            <div>0 : 0</div>
+            <div>0 : 0</div>
+            <div>0 : 0</div>
+            <div>0 : 0</div>
+        </div>
+        <div class="-hd-los-game-full-report-period-stats-additional">
+            <div>SOG</div>
+            <div>0 : 0</div>
+            <div>0 : 0</div>
+            <div>0 : 0</div>
+            <div>0 : 0</div>
+        </div>
+    </div>
+
+    <div class="-hd-los-game-full-report-game-facts" style="display: flex; background-color: transparent; font-size: 16px;">
+        <div style="width: 50%;">
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-scheduledDate">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>Datum</div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div><%= data.date %></div>
+                </div>
+            </div>
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-scheduledTime">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>Uhrzeit</div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div><%= data.time %></div>
+                </div>
+            </div>
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-referee1">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>1. Schiedsrichter</div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div><%= data.referre1 %></div>
+                </div>
+            </div>
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-referee2">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>2. Schiedsrichter</div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div><%= data.referre2 %></div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 50%;">
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-headcoachhome">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>Cheftrainer <%= data.home.logo %></div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div>&#160; <%= home.Trainer %></div>
+                </div>
+            </div>
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-headcoachaway">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>Cheftrainer <%= data.away.logo %></div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div>&#160;</div>
+                </div>
+            </div>
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-linesman1">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>1. Linienrichter</div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div><%= data.linesperson1 %></div>
+                </div>
+            </div>
+            <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-linesman2">
+                <div class="-hd-los-game-full-report-game-fact-label">
+                    <div>2. Linienrichter</div>
+                </div>
+                <div class="-hd-los-game-full-report-game-fact-value">
+                    <div><%= data.linesperson2 %></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="site-main" id="main">
+
+        <article id="post-156" class="post-156 page type-page status-publish" itemtype="https://schema.org/CreativeWork"
+            itemscope="">
+            <div class="inside-article">
+                <div class="entry-content" itemprop="text">
+                    <div id="pl-156" class="panel-layout">
+                        <div id="pg-156-0" class="panel-grid panel-no-style">
+                            <div id="pgc-156-0-0" class="panel-grid-cell">
+                                <aside class="widget">
+                                    <div class="-hd -hd-widget-parsed -hd-widget -hd-rd-mobile">
+                                        <div class="-hd-los -hd-los-game-full-report -hd-los-game-full-report-status-4">
+
+                                            <div
+                                                class="-hd-los-game-full-report-container -hd-los-game-full-report-goals">
+                                                <div class="-hd-los-game-full-report-headline"><span>Tore</span></div>
+                                                <div
+                                                    class="-hd-los-game-full-report-container-data -hd-los-game-full-report-goals-data -hd-util-intellitable">
+                                                    <div class="-hd-util-intellitable-scroll-help"
+                                                        style="display: block;">
+                                                        Scroll right to view more content</div>
+                                                    <div class="-hd-util-intellitable-data">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th title="Spielabschnitt"
+                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
+                                                                        Per</th>
+                                                                    <th title="Spielzeit"
+                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
+                                                                        Zeit</th>
+                                                                    <th title="Neuer Spielstand"
+                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
+                                                                        Spielstand</th>
+                                                                    <th class="-hd-clickable">&nbsp;</th>
+                                                                    <th title="Teamname" class="-hd-clickable">Team</th>
+                                                                    <th title="Erzielt von" class="-hd-clickable">
+                                                                        Erzielt
+                                                                        von</th>
+                                                                    <th title="Vorlage von" class="-hd-clickable">
+                                                                        Vorlage
+                                                                        von</th>
+                                                                    <th title="Vorlage 2 von" class="-hd-clickable">
+                                                                        Vorlage
+                                                                        2 von</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <% goals.forEach(element => { %>
+                                                                <tr>
+                                                                    <td class=" -hd-util-intellitable-numeric-value"
+                                                                        value="<%= element.period %>"><%= element.period %></td>
+                                                                    <td class=" -hd-util-intellitable-numeric-value"
+                                                                        value="<%= element.time %>"><%= element.time %></td>
+                                                                    <td class=" -hd-util-intellitable-numeric-value -hd-los-game-full-report-goals-new-score"
+                                                                        value="1:0">1:0</td>
+                                                                    <td class=" -hd-util-intellitable-numeric-value"
+                                                                        value="&amp;nbsp;">&nbsp;</td>
+                                                                    <td class="" value="<%= element.verein %>"><%= element.verein %></td>
+                                                                    <td class=" -hd-los-game-full-report-goals-scored-by"
+                                                                        value="<%= element.torschütze.fullname %> <span class='-hd-los-game-full-report-goals-player-jersey-no'>(<%= element.torschütze.jersey %>)</span>">
+                                                                        <%= element.torschütze.fullname %> <span
+                                                                            class="-hd-los-game-full-report-goals-player-jersey-no">(<%= element.torschütze.jersey %>)</span>
+                                                                    </td>
+                                                                    <td class=""
+                                                                        value="<%= element.vorlage1.fullname %> <span class='-hd-los-game-full-report-goals-player-jersey-no'>(<%= element.vorlage1.jersey %>)</span>">
+                                                                        <%= element.vorlage1.fullname %> <span
+                                                                            class="-hd-los-game-full-report-goals-player-jersey-no">(<%= element.vorlage1.jersey %>)</span>
+                                                                    </td>
+                                                                    <td class=""
+                                                                        value="<%= element.vorlage2.fullname %> <span class='-hd-los-game-full-report-goals-player-jersey-no'>(<%= element.vorlage2.jersey %>)</span>">
+                                                                        <%= element.vorlage2.fullname %> <span
+                                                                            class="-hd-los-game-full-report-goals-player-jersey-no">(<%= element.vorlage2.jersey %>)</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <% }) %>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="-hd-util-intellitable-overlay"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="-hd-los-game-full-report-container -hd-los-game-full-report-penalties">
+                                                <div class="-hd-los-game-full-report-headline"><span>Strafen</span>
+                                                </div>
+                                                <div
+                                                    class="-hd-los-game-full-report-container-data -hd-los-game-full-report-penalties-data -hd-util-intellitable">
+                                                    <div class="-hd-util-intellitable-scroll-help"
+                                                        style="display: block;">
+                                                        Scroll right to view more content</div>
+                                                    <div class="-hd-util-intellitable-data">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th title="Spielabschnitt"
+                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
+                                                                        Per</th>
+                                                                    <th title="Spielzeit"
+                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
+                                                                        Zeit</th>
+                                                                    <th title="Teamname" class="-hd-clickable">Team</th>
+                                                                    <th title="Spieler" class="-hd-clickable">Spieler
+                                                                    </th>
+                                                                    <th title="Strafminuten"
+                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
+                                                                        PIM</th>
+                                                                    <th title="Vergehen" class="-hd-clickable">Vergehen
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <% penaltys.forEach(element => { %>
+                                                                <tr>
+                                                                    <td class=" -hd-util-intellitable-numeric-value"
+                                                                        value="<%= element.period %>"><%= element.period %></td>
+                                                                    <td class=" -hd-util-intellitable-numeric-value"
+                                                                        value="<%= element.time %>"><%= element.time %></td>
+                                                                    <td class="" value="<%= element.verein %>"><%= element.verein %></td>
+                                                                    <td class=""
+                                                                        value="<%= element.player.fullname %> <span class='-hd-los-game-full-report-goals-player-jersey-no'>(<%= element.player.jersey %>)</span>">
+                                                                        <%= element.player.fullname %> <span
+                                                                            class="-hd-los-game-full-report-goals-player-jersey-no">(<%= element.player.jersey %>)</span>
+                                                                    </td>
+                                                                    <td class=" -hd-util-intellitable-numeric-value"
+                                                                        value="<%= element.length %>"><%= element.length %>:00</td>
+                                                                    <td class="" value="<%= element.vergehen %>"><%= element.vergehen %></td>
+                                                                </tr>
+                                                                <% }) %>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="-hd-util-intellitable-overlay"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="-hd-los-game-full-report-container -hd-los-game-full-report-field-players">
+                                                <div class="-hd-los-game-full-report-headline">
+                                                    <span>Feldspieler - <%= data.home.name %></span>
+                                                </div>
+                                                <div>                                                           
+                                                    <div class="-hd-los-game-full-report-container-data -hd-los-game-full-report-field-players-data -hd-los-game-full-report-field-players-data-lineups">
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 1
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LF1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LF1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.C1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.C1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RF1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RF1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LH2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LH2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RH1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RH1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 2
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LF2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LF2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.C2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.C2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RF2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RF2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LH2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LH2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RH2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RH2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 3
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LF3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LF3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.C3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.C3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RF3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RF3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LH3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LH3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RH3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RH3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 4
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LF4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LF4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.C4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.C4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RF4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RF4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.LH4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.LH4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.RH4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.RH4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">
+                                                                Goalies
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.TW1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.TW1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        G</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= home.TW2.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= home.TW2.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        G</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="-hd-los-game-full-report-container -hd-los-game-full-report-field-players">
+                                                <div class="-hd-los-game-full-report-headline">
+                                                    <span>Feldspieler - <%= data.away.name %></span>
+                                                </div>
+                                                <div>                                                           
+                                                    <div class="-hd-los-game-full-report-container-data -hd-los-game-full-report-field-players-data -hd-los-game-full-report-field-players-data-lineups">
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 1
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LF1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LF1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.C1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.C1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RF1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RF1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LH2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LH2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RH1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RH1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 2
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LF2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LF2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.C2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.C2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RF2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RF2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LH2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LH2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RH2.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RH2.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 3
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LF3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LF3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.C3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.C3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RF3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RF3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LH3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LH3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RH3.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RH3.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">Linie 4
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LF4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LF4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.C4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.C4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        C</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RF4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RF4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RF</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.LH4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.LH4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        LD</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.RH4.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.RH4.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        RD</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-hd-los-game-full-report-lineup">
+                                                            <div class="-hd-los-game-full-report-lineup-headline">
+                                                                Goalies
+                                                            </div>
+                                                            <div class="-hd-los-game-full-report-lineup-players">
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.TW1.jersey %></div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.TW1.fullname %>
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        G</div>
+                                                                </div>
+                                                                <div
+                                                                    class="-hd-los-game-full-report-lineup-player -hd-clickable">
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-jersey-no">
+                                                                        <%= away.TW2.jersey %> &nbsp;</div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-name">
+                                                                        <%= away.TW2.fullname %> &nbsp;
+                                                                    </div>
+                                                                    <div
+                                                                        class="-hd-los-game-full-report-lineup-player-position">
+                                                                        G</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </aside>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="/js/home.js"></script>
+    <script src="/js/away.js"></script>
+</body>
+
+</html>
