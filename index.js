@@ -2,7 +2,7 @@ require('dotenv').config();
 const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
-const mongoString = process.env.DATABASE_URL;
+const mongoString = 'mongodb+srv://api-levmv-main-db-0d7c6f8c812:SH83DR3j5Sf3W1uMDX1tr6WGbh4EwH@prod-us-central1-1.lfuy1.mongodb.net/api-levmv-main-db-0d7c6f8c812';
 const port = process.env.PORT || 3000;
 let bodyParser = require('body-parser');
 let helmet = require('helmet');
