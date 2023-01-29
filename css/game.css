@@ -3144,3 +3144,26 @@
             background-color: transparent; 
             font-size: 16px;
         }
+
+        #true {
+            visibility: visible;
+        }
+
+        #false {
+            display: none;
+        }
+
+        #trueElement {
+            display: none;
+        }
+
+        .-hd-los-schedule .-hd-los-schedule-state-extended-label {
+            background-color: #a44;
+            color: #fff;
+            display: inline-block;
+            font-size: 10px;
+            padding: 0 2px;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: normal;
+        }
