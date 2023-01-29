@@ -2512,31 +2512,17 @@
             padding: 2px;
         }
 
-        /*
-     * Media Queries
-     */
-        /* 0 - 480 */
         @media only screen and (max-width: 480px) {
-
-            /*
-                                                                                                         * Buttons
-                                                                                                         */
             .-hd-button {
                 min-width: 40px;
                 padding: 2px;
             }
 
-            /*
-                                                                                                         * Tabs
-                                                                                                         */
             .-hd-util-tabs-button {
                 min-width: 30px;
                 padding: 0 4px;
             }
 
-            /*
-                                                                                                         * IntelliTable
-                                                                                                         */
             .-hd-util-intellitable-data th {
                 padding: 2px 1px;
             }
@@ -2554,9 +2540,6 @@
                 width: auto;
             }
 
-            /*
-                                                                                                         * Schedule
-                                                                                                         */
             .-hd-los-schedule .-hd-los-schedule-score,
             .-hd-los-schedule .-hd-los-schedule-score-divider {
                 font-size: 1em;
@@ -2571,24 +2554,15 @@
                 display: none;
             }
 
-            /*
-                                                                                                         * Slider
-                                                                                                         */
             .-hd-util-slider .-hd-util-slider-inline-image {
                 display: none;
             }
 
-            /*
-                                                                                                         * Game Slider
-                                                                                                         */
             .-hd-los-game-slider .-hd-los-game-slider-score {
                 clear: both;
                 line-height: 30px;
             }
 
-            /*
-                                                                                                         * Full Game Report
-                                                                                                         */
             .-hd-los-game-full-report-team-name,
             .-hd-los-game-full-report-team-logo {
                 height: 30px;
@@ -2660,9 +2634,6 @@
                 width: 100%;
             }
 
-            /*
-                                                                                                         * Full Player Page
-                                                                                                         */
             .-hd-los-player-full-page-player-info {
                 height: 35px;
             }

@@ -25,6 +25,7 @@ app.use(helmet());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/css', express.static('css'));
 app.use('/images', express.static('images'));
+app.use('/js', express.static('js'));
 app.use('/', express.static('/'));
 
 const routes = require('./routes/routes');

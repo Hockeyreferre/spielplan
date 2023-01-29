@@ -85,11 +85,11 @@
                                             value="[object HTMLImageElement]"><img
                                                 src="/images/tn_<%= element.home.logo %>.png">
                                         </td>
-                                        <td class="-hd-los-schedule-col-homeTeamScore -hd-los-schedule-home-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value"
+                                        <td class="-hd-los-schedule-col-homeTeamScore -hd-los-schedule-home-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value <%= element.live %>"
                                             value="-">-</td>
-                                        <td class="-hd-los-schedule-col-scoreDivider -hd-los-schedule-score-divider"
+                                        <td class="-hd-los-schedule-col-scoreDivider -hd-los-schedule-score-divider <%= element.live %>"
                                             value=":">:</td>
-                                        <td class="-hd-los-schedule-col-awayTeamScore -hd-los-schedule-away-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value"
+                                        <td class="-hd-los-schedule-col-awayTeamScore -hd-los-schedule-away-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value <%= element.live %>"
                                             value="-">-</td>
                                         <td class="-hd-los-schedule-col-scoreInfo" value="&amp;nbsp;">&nbsp;</td>
                                         <td class="-hd-los-schedule-col-awayTeamLogo -hd-util-intellitable-inline-image -hd-los-schedule-team-logo -hd-los-schedule-away-team-logo"
@@ -102,7 +102,7 @@
                                             value="<%= element.away.name %>"><%= element.away.name %></td>
                                         <td class="-hd-los-schedule-col-locationLongname" value="<%= element.stadion %>">
                                           <%= element.stadion %></td>
-                                        <td><a style="text-decoration: none; font-weight: bold;" class="<%= element.live %>" href="/<%= liga %>/game/<%= element.id %>/<%= element.home.name %>/<%= element.away.name %>">Zum Spiel</a></td>
+                                        <td><a style="text-decoration: none; font-weight: bold;" href="/<%= element.liga %>/game/<%= element.id %>/<%= element.home.name %>/<%= element.away.name %>">Zum Spiel</a></td>
                                     </tr>
                                     <% }) %>
                                 </tbody>
@@ -171,11 +171,11 @@
                                               value="[object HTMLImageElement]"><img
                                                   src="/images/tn_<%= element.home.logo %>.png">
                                           </td>
-                                          <td class="-hd-los-schedule-col-homeTeamScore -hd-los-schedule-home-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value"
+                                          <td class="-hd-los-schedule-col-homeTeamScore -hd-los-schedule-home-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value <%= element.live %>"
                                               value="-">-</td>
-                                          <td class="-hd-los-schedule-col-scoreDivider -hd-los-schedule-score-divider"
+                                          <td class="-hd-los-schedule-col-scoreDivider -hd-los-schedule-score-divider <%= element.live %>"
                                               value=":">:</td>
-                                          <td class="-hd-los-schedule-col-awayTeamScore -hd-los-schedule-away-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value"
+                                          <td class="-hd-los-schedule-col-awayTeamScore -hd-los-schedule-away-team-score -hd-los-schedule-score -hd-util-intellitable-numeric-value <%= element.live %>"
                                               value="-">-</td>
                                           <td class="-hd-los-schedule-col-scoreInfo" value="&amp;nbsp;">&nbsp;</td>
                                           <td class="-hd-los-schedule-col-awayTeamLogo -hd-util-intellitable-inline-image -hd-los-schedule-team-logo -hd-los-schedule-away-team-logo"
@@ -188,7 +188,7 @@
                                               value="<%= element.away.name %>"><%= element.away.name %></td>
                                           <td class="-hd-los-schedule-col-locationLongname" value="<%= element.stadion %>">
                                             <%= element.stadion %></td>
-                                          <td><a style="text-decoration: none; font-weight: bold;" class="<%= element.live %>" href="/<%= liga %>/game/<%= element.id %>/<%= element.home.name %>/<%= element.away.name %>">Zum Spiel</a></td>
+                                          <td><a style="text-decoration: none; font-weight: bold;" href="/<%= element.liga %>/game/<%= element.id %>/<%= element.home.name %>/<%= element.away.name %>">Zum Spiel</a></td>
                                       </tr>
                                       <% }) %>
                                   </tbody>
