@@ -1,0 +1,83 @@
+.-hd-util-intellitable .-hd-util-intellitable-data table {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.-hd-util-intellitable .-hd-util-intellitable-data table {
+    width: 100%;
+}
+
+table {
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: .9em;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.elementor {
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.-hd-rd-mobile .-hd-util-intellitable .-hd-util-intellitable-data th {
+    padding: 6px 1px;
+}
+
+.-hd-util-intellitable .-hd-util-intellitable-data .-hd-util-intellitable-rank, .-hd-util-intellitable .-hd-util-intellitable-data .-hd-util-intellitable-rank-value {
+    text-align: right;
+}
+
+table caption+thead tr:first-child td, table caption+thead tr:first-child th, table colgroup+thead tr:first-child td, table colgroup+thead tr:first-child th, table thead:first-child tr:first-child td, table thead:first-child tr:first-child th {
+    border-top: 1px solid hsla(0,0%,50.2%,.5019607843137255);
+}
+
+.-hd-util-intellitable .-hd-util-intellitable-data th {
+    border: 0;
+    font-weight: 800;
+    padding: 6px;
+}
+
+.-hd-util-intellitable th, .-hd-util-intellitable td {
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table td, table th {
+    padding: 15px;
+    line-height: 1.5;
+    vertical-align: top;
+    /* border: 1px solid hsla(0,0%,50.2%,.5019607843137255); */
+}
+
+table th {
+    font-weight: 700;
+}
+
+table tfoot th, table thead th {
+    font-size: 1em;
+}
+
+table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th {
+    background-color: hsla(0,0%,50.2%,.07058823529411765);
+}
+
+
+@media only screen and (max-width: 768px) {
+    #tabelle-tab th, #tabelle-tab td, #teamstats-tab th, #teamstats-tab td, #spielerstats-tab th, #spielerstats-tab td, .-hd-los-team-full-page .-hd-util-intellitable-data th, .-hd-los-team-full-page .-hd-util-intellitable-data td, .-hd-los-player-full-page .-hd-util-intellitable-data th, .-hd-los-player-full-page .-hd-util-intellitable-data td {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}

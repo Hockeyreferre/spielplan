@@ -19,7 +19,11 @@ router.get('/spielplan', async (req, res) => {
 })
 
 router.get('/tabelle', async (req, res) => {
-    res.render('404', { data: await Tabelle.find({ liga: liga }).sort(table), liga: liga });
+    res.render('tabelle', { 
+        data: await Tabelle.find({ liga: liga }).sort(table), 
+        liga: liga,
+        goals: await Goal.find({ verein: req.body.name })
+    });
 })
 
 router.get('/game/:id/:home/:away', async (req, res) => {
