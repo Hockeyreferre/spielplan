@@ -8,14 +8,13 @@ const router = express.Router();
 const liga = 'ostseeliga'
 const table = { place: 1 }
 const sort = { live: -1, date: 1, time: 1, abgesagt: -1 }
-const aufstellung = []
 
 router.get('', async (req, res) => {
     res.render('startseiteLiga', { live: await Model.find({ live: true, liga: liga }).sort(sort), liga: liga });
 })
 
 router.get('/spielplan', async (req, res) => {
-    res.render('spielplan', { games: await Model.find({ liga: liga }).sort(sort), liga: liga });
+    res.render('spielplan', { games: await Model.find({ liga: liga }), liga: liga });
 })
 
 router.get('/tabelle', async (req, res) => {

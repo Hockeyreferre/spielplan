@@ -25,9 +25,9 @@
       </button>
       <div id="navbar-menu" aria-labelledby="navbar-toggle">
         <ul class="navbar-links">
-          <li class="navbar-item"><a class="navbar-link" href="<%= liga %>/">Startseite</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="<%= liga %>/spielplan">Spielplan</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="<%= liga %>/tabelle">Tabelle</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/">Startseite</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/spielplan">Spielplan</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/tabelle">Tabelle</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/<%= liga == 'u15' ? 'ostseeliga' : 'u15' %>">
               <%= liga=='u15' ? 'Ostseeliga' : 'U13 / U15' %>
             </a></li>
@@ -70,9 +70,9 @@
           <td class="-hd-los-standings-col-gamesLost -hd-util-intellitable-numeric-value" value="<%= element.loose %>"><%= element.loose %></td>
           <td class="-hd-los-standings-col-gamesWonInOt -hd-util-intellitable-numeric-value" value="<%= element.winOT %>"><%= element.winOT %></td>
           <td class="-hd-los-standings-col-gamesLostInOt -hd-util-intellitable-numeric-value" value="<%= element.looseOT %>"><%= element.looseOT %></td>
-          <td class="-hd-los-standings-col-goalsFor -hd-util-intellitable-numeric-value" value="<%= goals.length %>"><%= goals.length %></td>
+          <td class="-hd-los-standings-col-goalsFor -hd-util-intellitable-numeric-value" value="<%= element.goals %>"><%= element.goals %></td>
           <td class="-hd-los-standings-col-goalsAgainst -hd-util-intellitable-numeric-value" value="<%= element.ggoals %>"><%= element.ggoals %></td>
-          <td class="-hd-los-standings-col-goalDifference -hd-util-intellitable-numeric-value" value="<%= goals.length - element.ggoals %>"><%= goals.length - element.ggoals %></td>
+          <td class="-hd-los-standings-col-goalDifference -hd-util-intellitable-numeric-value" value="<%= element.goals - element.ggoals %>"><%= element.goals - element.ggoals %></td>
           <td class="-hd-los-standings-col-points -hd-util-intellitable-numeric-value" value="<%= element.points %>"><%= element.points %></td>
         </tr>
       <% }) %>
