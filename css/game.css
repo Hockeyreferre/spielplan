@@ -1420,6 +1420,7 @@
         .-hd-los-game-full-report-period-stats {
             opacity: .75;
             text-align: center;
+            margin-bottom: 40px;
         }
 
         .-hd-los-game-full-report-period-stats>div {
@@ -1437,22 +1438,22 @@
             line-height: 24px;
             margin-right: 1px;
             overflow: hidden;
-            width: 45px;
+            width: 75px;
         }
 
-        .-hd-los-game-full-report-period-stats>div>div:first-child {
+        /* .-hd-los-game-full-report-period-stats>div>div:first-child {
             padding-left: 2px;
             text-align: left;
-        }
+        } */
 
         .-hd-los-game-full-report-period-stats>div.-hd-los-game-full-report-period-stats-header>div {
             background-color: #111;
             font-weight: bold;
         }
 
-        .-hd-los-game-full-report-period-stats>div.-hd-los-game-full-report-period-stats-header>div:first-child {
+        /* .-hd-los-game-full-report-period-stats>div.-hd-los-game-full-report-period-stats-header>div:first-child {
             background: none;
-        }
+        } */
 
         .-hd-los-game-full-report-team-name,
         .-hd-los-game-full-report-team-logo {

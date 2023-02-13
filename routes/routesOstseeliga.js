@@ -30,7 +30,7 @@ router.get('/game/:id/:home/:away', async (req, res) => {
     const teamNameAway = req.params.away + " " + req.params.id;
     const teamNameHome = req.params.home + " " + req.params.id;
     res.render('gamedetail', { 
-        home: await Aufstellung.findOne({ teamName: teamNameHome }) || res.render('404', { liga: liga }), 
+        home: await Aufstellung.findOne({ teamName: teamNameHome }), 
         away: await Aufstellung.findOne({ teamName: teamNameAway }), 
         data: await Model.findById(req.params.id), 
         liga: liga, 
