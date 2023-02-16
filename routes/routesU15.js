@@ -30,7 +30,7 @@ router.get('/game/:id/:home/:away', async (req, res) => {
     const teamNameAway = req.params.away + " " + req.params.id;
     const teamNameHome = req.params.home + " " + req.params.id;
     res.render('gamedetail', { 
-        home: await Aufstellung.findOne({ teamName: teamNameHome }) || res.render('404', { liga: liga }), 
+        home: await Aufstellung.findOne({ teamName: teamNameHome }), 
         away: await Aufstellung.findOne({ teamName: teamNameAway }), 
         data: await Model.findById(req.params.id), 
         liga: liga, 
@@ -43,7 +43,9 @@ router.get('/game/:id/:home/:away', async (req, res) => {
         goalsHome3: await Goal.find({ gameID: req.params.id, verein: req.params.home, period: 3 }),
         goalsAway1: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 1 }),
         goalsAway2: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 2 }),
-        goalsAway3: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 3 })
+        goalsAway3: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 3 }),
+        goalsHomeOT: await Goal.find({ gameID: req.params.id, verein: req.params.home, period: 4 }),
+        goalsAwayOT: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 4 })
     })
 })
 

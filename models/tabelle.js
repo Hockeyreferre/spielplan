@@ -33,6 +33,10 @@ const table = new mongoose.Schema({
         required: true,
         type: Number
     },
+    goals: {
+        required: true,
+        type: Number
+    },
     ggoals: {
         required: true,
         type: Number

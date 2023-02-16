@@ -14,7 +14,7 @@ router.get('', async (req, res) => {
 })
 
 router.get('/spielplan', async (req, res) => {
-    res.render('spielplan', { games: await Model.find({ liga: liga }), liga: liga });
+    res.render('spielplan', { games: await Model.find({ liga: liga }).sort({live: -1}), liga: liga });
 })
 
 router.get('/tabelle', async (req, res) => {

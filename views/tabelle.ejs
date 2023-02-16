@@ -56,26 +56,55 @@
     <tbody>
       <% data.forEach(element => { %>
         <tr class="-hd-los-standings-row -hd-los-standings-row-13048 -hd-clickable">
-          <td class="-hd-los-standings-col-tableRank -hd-util-intellitable-rank-value" value="<%= element.place %>"><%= element.place %></td>
+          <td class="-hd-los-standings-col-tableRank -hd-util-intellitable-rank-value" value="<%= element.place %>">
+            <%= element.place %>
+          </td>
           <td class="-hd-los-standings-col-teamLogo -hd-util-intellitable-inline-image -hd-los-standings-team-logo"
-            value="[object HTMLImageElement]"><img class="elementor"
-              src="/images/tn_<%= element.logo %>.png"/></td>
-          <td class="-hd-los-standings-col-teamShortname -hd-los-standings-team-name-short" value="<%= element.logo %>"><%= element.logo %></td>
+            value="[object HTMLImageElement]"><img class="elementor" src="/images/tn_<%= element.logo %>.png" /></td>
+          <td class="-hd-los-standings-col-teamShortname -hd-los-standings-team-name-short" value="<%= element.logo %>">
+            <%= element.logo %>
+          </td>
           <form action="/tabelle" class="get">
-            <td class="-hd-los-standings-col-teamLongname -hd-los-standings-team-name-long" id="name" value="<%= element.name %>"><%= element.name %></td>
+            <td class="-hd-los-standings-col-teamLongname -hd-los-standings-team-name-long" id="name"
+              value="<%= element.name %>">
+              <%= element.name %>
+            </td>
           </form>
-          
-          <td class="-hd-los-standings-col-gamesPlayed -hd-util-intellitable-numeric-value" value="<%= element.games %>"><%= element.games %></td>
-          <td class="-hd-los-standings-col-gamesWon -hd-util-intellitable-numeric-value" value="<%= element.win %>"><%= element.win %></td>
-          <td class="-hd-los-standings-col-gamesLost -hd-util-intellitable-numeric-value" value="<%= element.loose %>"><%= element.loose %></td>
-          <td class="-hd-los-standings-col-gamesWonInOt -hd-util-intellitable-numeric-value" value="<%= element.winOT %>"><%= element.winOT %></td>
-          <td class="-hd-los-standings-col-gamesLostInOt -hd-util-intellitable-numeric-value" value="<%= element.looseOT %>"><%= element.looseOT %></td>
-          <td class="-hd-los-standings-col-goalsFor -hd-util-intellitable-numeric-value" value="<%= element.goals %>"><%= element.goals %></td>
-          <td class="-hd-los-standings-col-goalsAgainst -hd-util-intellitable-numeric-value" value="<%= element.ggoals %>"><%= element.ggoals %></td>
-          <td class="-hd-los-standings-col-goalDifference -hd-util-intellitable-numeric-value" value="<%= element.goals - element.ggoals %>"><%= element.goals - element.ggoals %></td>
-          <td class="-hd-los-standings-col-points -hd-util-intellitable-numeric-value" value="<%= element.points %>"><%= element.points %></td>
+
+          <td class="-hd-los-standings-col-gamesPlayed -hd-util-intellitable-numeric-value"
+            value="<%= element.games %>">
+            <%= element.games %>
+          </td>
+          <td class="-hd-los-standings-col-gamesWon -hd-util-intellitable-numeric-value" value="<%= element.win %>">
+            <%= element.win %>
+          </td>
+          <td class="-hd-los-standings-col-gamesLost -hd-util-intellitable-numeric-value" value="<%= element.loose %>">
+            <%= element.loose %>
+          </td>
+          <td class="-hd-los-standings-col-gamesWonInOt -hd-util-intellitable-numeric-value"
+            value="<%= element.winOT %>">
+            <%= element.winOT %>
+          </td>
+          <td class="-hd-los-standings-col-gamesLostInOt -hd-util-intellitable-numeric-value"
+            value="<%= element.looseOT %>">
+            <%= element.looseOT %>
+          </td>
+          <td class="-hd-los-standings-col-goalsFor -hd-util-intellitable-numeric-value" value="<%= element.goals %>">
+            <%= element.goals %>
+          </td>
+          <td class="-hd-los-standings-col-goalsAgainst -hd-util-intellitable-numeric-value"
+            value="<%= element.ggoals %>">
+            <%= element.ggoals %>
+          </td>
+          <td class="-hd-los-standings-col-goalDifference -hd-util-intellitable-numeric-value"
+            value="<%= element.goals - element.ggoals %>">
+            <%= element.goals - element.ggoals %>
+          </td>
+          <td class="-hd-los-standings-col-points -hd-util-intellitable-numeric-value" value="<%= element.points %>">
+            <%= element.points %>
+          </td>
         </tr>
-      <% }) %>
+        <% }) %>
     </tbody>
   </table>
 
