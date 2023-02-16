@@ -42,7 +42,9 @@ router.get('/game/:id/:home/:away', async (req, res) => {
         goalsHome3: await Goal.find({ gameID: req.params.id, verein: req.params.home, period: 3 }),
         goalsAway1: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 1 }),
         goalsAway2: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 2 }),
-        goalsAway3: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 3 })
+        goalsAway3: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 3 }),
+        goalsHomeOT: await Goal.find({ gameID: req.params.id, verein: req.params.home, period: 4 }),
+        goalsAwayOT: await Goal.find({ gameID: req.params.id, verein: req.params.away, period: 4 })
     })
 })
 

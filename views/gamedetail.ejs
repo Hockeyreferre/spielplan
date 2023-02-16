@@ -50,7 +50,7 @@
         </div>
         <div class="sv_title_flex">
             <div class="sv_links_title"><b><%= data.home.name %></b></div>
-            <div class="sv_mitte_title <%= data.live %>" style="visibility: hidden;">>ENTSTAND</div>
+            <div class="sv_mitte_title <%= data.live %>" style="visibility: hidden;">ENTSTAND</div>
             <div class="sv_rechts_title"><b><%= data.away.name %></b></div>
         </div>
     </div>
@@ -66,7 +66,7 @@
             <div><%= goalsHome1.length %> : <%= goalsAway1.length %></div>
             <div><%= goalsHome2.length %> : <%= goalsAway2.length %></div>
             <div><%= goalsHome3.length %> : <%= goalsAway3.length %></div>
-            <div>0 : 0</div>
+            <div><%= goalsHomeOT.length %> : <%= goalsAwayOT.length %></div>
         </div>
     </div>
 
@@ -172,9 +172,6 @@
                                                                     <th title="Spielzeit"
                                                                         class="-hd-util-intellitable-numeric-value -hd-clickable">
                                                                         Zeit</th>
-                                                                    <th title="Neuer Spielstand"
-                                                                        class="-hd-util-intellitable-numeric-value -hd-clickable">
-                                                                        Spielstand</th>
                                                                     <th class="-hd-clickable">&nbsp;</th>
                                                                     <th title="Teamname" class="-hd-clickable">Team</th>
                                                                     <th title="Erzielt von" class="-hd-clickable">
@@ -192,11 +189,9 @@
                                                                 <% goals.forEach(element => { %>
                                                                 <tr>
                                                                     <td class=" -hd-util-intellitable-numeric-value"
-                                                                        value="<%= element.period %>"><%= element.period %></td>
+                                                                        value="<%= element.period %>"><%= element.period == '4' ? 'OT' : element.period %></td>
                                                                     <td class=" -hd-util-intellitable-numeric-value"
                                                                         value="<%= element.time %>"><%= element.time %></td>
-                                                                    <td class=" -hd-util-intellitable-numeric-value -hd-los-game-full-report-goals-new-score"
-                                                                        value="1:0">1:0</td>
                                                                     <td class=" -hd-util-intellitable-numeric-value"
                                                                         value="&nbsp;">&nbsp;</td>
                                                                     <td class="" value="<%= element.verein %>"><%= element.verein %></td>
