@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spielplan | LEV MV</title>
+  <title>Tabelle <%= liga %> | LEV MV</title>
   <link rel="stylesheet" href="/css/table.css">
   <link rel="stylesheet" href="/css/navbar.css">
 </head>
@@ -54,10 +54,11 @@
       </tr>
     </thead>
     <tbody>
-      <% data.forEach(element => { %>
+      <% for(let i = 0; i < data.length; i++) { %>
+        <% const element = data[i] %>
         <tr class="-hd-los-standings-row -hd-los-standings-row-13048 -hd-clickable">
           <td class="-hd-los-standings-col-tableRank -hd-util-intellitable-rank-value" value="<%= element.place %>">
-            <%= element.place %>
+            <%= i + 1 %>
           </td>
           <td class="-hd-los-standings-col-teamLogo -hd-util-intellitable-inline-image -hd-los-standings-team-logo"
             value="[object HTMLImageElement]"><img class="elementor" src="/images/tn_<%= element.logo %>.png" /></td>
@@ -104,7 +105,7 @@
             <%= element.points %>
           </td>
         </tr>
-        <% }) %>
+        <% } %>
     </tbody>
   </table>
 

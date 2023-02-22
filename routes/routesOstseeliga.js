@@ -6,7 +6,7 @@ const Goal = require('../models/goal');
 const Penalty = require('../models/penalty');
 const router = express.Router();
 const liga = 'ostseeliga'
-const table = { place: 1 }
+const table = { points: -1, games: -1 }
 const sort = { live: -1, date: 1, time: 1, abgesagt: -1 }
 
 router.get('', async (req, res) => {
