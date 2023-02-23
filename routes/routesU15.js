@@ -9,11 +9,11 @@ const liga = 'u15'
 const table = { points: -1, games: -1 }
 const sort = { live: -1, date: 1, time: 1, abgesagt: -1 }
 
-router.get('', async (req, res) => {
-    res.render('startseiteLiga', { live: await Model.find({ live: true, liga: liga }).sort(sort), liga: liga });
-})
+// router.get('', async (req, res) => {
+//     res.render('startseiteLiga', { live: await Model.find({ live: true, liga: liga }).sort(sort), liga: liga });
+// })
 
-router.get('/spielplan', async (req, res) => {
+router.get('', async (req, res) => {
     res.render('spielplan', { games: await Model.find({ liga: liga }).sort({live: -1}), liga: liga });
 })
 

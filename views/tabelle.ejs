@@ -25,8 +25,8 @@
       </button>
       <div id="navbar-menu" aria-labelledby="navbar-toggle">
         <ul class="navbar-links">
-          <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/">Startseite</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/spielplan">Spielplan</a></li>
+          <!-- <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/">Startseite</a></li> -->
+          <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>">Spielplan</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/tabelle">Tabelle</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/<%= liga == 'u15' ? 'ostseeliga' : 'u15' %>">
               <%= liga=='u15' ? 'Ostseeliga' : 'U13 / U15' %>
@@ -35,79 +35,81 @@
       </div>
     </nav>
   </header>
-  <table>
-    <thead>
-      <tr>
-        <th class="-hd-util-intellitable-rank-value -hd-clickable">&nbsp;</th>
-        <th class="-hd-clickable">&nbsp;</th>
-        <th title="Teamname" class="-hd-los-standings-team-name-short -hd-clickable">Team</th>
-        <th title="Teamname" class="-hd-los-standings-team-name-long -hd-clickable">Team</th>
-        <th title="Gespielte Spiele" class="-hd-util-intellitable-numeric-value -hd-clickable">SP</th>
-        <th title="Siege" class="-hd-util-intellitable-numeric-value -hd-clickable">S</th>
-        <th title="Niederlagen" class="-hd-util-intellitable-numeric-value -hd-clickable">N</th>
-        <th title="Siege nach Verlängerung" class="-hd-util-intellitable-numeric-value -hd-clickable">OTW</th>
-        <th title="Niederlagen nach Verlängerung" class="-hd-util-intellitable-numeric-value -hd-clickable">OTL</th>
-        <th title="Erzielte Tore" class="-hd-util-intellitable-numeric-value -hd-clickable">T+</th>
-        <th title="Erhaltene Tore" class="-hd-util-intellitable-numeric-value -hd-clickable">T-</th>
-        <th title="Tordifferenz" class="-hd-util-intellitable-numeric-value -hd-clickable">TD</th>
-        <th title="Punkte" class="-hd-util-intellitable-numeric-value -hd-clickable">P</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% for(let i = 0; i < data.length; i++) { %>
-        <% const element = data[i] %>
-        <tr class="-hd-los-standings-row -hd-los-standings-row-13048 -hd-clickable">
-          <td class="-hd-los-standings-col-tableRank -hd-util-intellitable-rank-value" value="<%= element.place %>">
-            <%= i + 1 %>
-          </td>
-          <td class="-hd-los-standings-col-teamLogo -hd-util-intellitable-inline-image -hd-los-standings-team-logo"
-            value="[object HTMLImageElement]"><img class="elementor" src="/images/tn_<%= element.logo %>.png" /></td>
-          <td class="-hd-los-standings-col-teamShortname -hd-los-standings-team-name-short" value="<%= element.logo %>">
-            <%= element.logo %>
-          </td>
-          <form action="/tabelle" class="get">
-            <td class="-hd-los-standings-col-teamLongname -hd-los-standings-team-name-long" id="name"
-              value="<%= element.name %>">
-              <%= element.name %>
-            </td>
-          </form>
-
-          <td class="-hd-los-standings-col-gamesPlayed -hd-util-intellitable-numeric-value"
-            value="<%= element.games %>">
-            <%= element.games %>
-          </td>
-          <td class="-hd-los-standings-col-gamesWon -hd-util-intellitable-numeric-value" value="<%= element.win %>">
-            <%= element.win %>
-          </td>
-          <td class="-hd-los-standings-col-gamesLost -hd-util-intellitable-numeric-value" value="<%= element.loose %>">
-            <%= element.loose %>
-          </td>
-          <td class="-hd-los-standings-col-gamesWonInOt -hd-util-intellitable-numeric-value"
-            value="<%= element.winOT %>">
-            <%= element.winOT %>
-          </td>
-          <td class="-hd-los-standings-col-gamesLostInOt -hd-util-intellitable-numeric-value"
-            value="<%= element.looseOT %>">
-            <%= element.looseOT %>
-          </td>
-          <td class="-hd-los-standings-col-goalsFor -hd-util-intellitable-numeric-value" value="<%= element.goals %>">
-            <%= element.goals %>
-          </td>
-          <td class="-hd-los-standings-col-goalsAgainst -hd-util-intellitable-numeric-value"
-            value="<%= element.ggoals %>">
-            <%= element.ggoals %>
-          </td>
-          <td class="-hd-los-standings-col-goalDifference -hd-util-intellitable-numeric-value"
-            value="<%= element.goals - element.ggoals %>">
-            <%= element.goals - element.ggoals %>
-          </td>
-          <td class="-hd-los-standings-col-points -hd-util-intellitable-numeric-value" value="<%= element.points %>">
-            <%= element.points %>
-          </td>
+  <div style="overflow: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th class="-hd-util-intellitable-rank-value -hd-clickable">&nbsp;</th>
+          <th class="-hd-clickable">&nbsp;</th>
+          <th title="Teamname" class="-hd-los-standings-team-name-short -hd-clickable">Team</th>
+          <th title="Teamname" class="-hd-los-standings-team-name-long -hd-clickable">Team</th>
+          <th title="Gespielte Spiele" class="-hd-util-intellitable-numeric-value -hd-clickable">SP</th>
+          <th title="Siege" class="-hd-util-intellitable-numeric-value -hd-clickable">S</th>
+          <th title="Niederlagen" class="-hd-util-intellitable-numeric-value -hd-clickable">N</th>
+          <th title="Siege nach Verlängerung" class="-hd-util-intellitable-numeric-value -hd-clickable">OTW</th>
+          <th title="Niederlagen nach Verlängerung" class="-hd-util-intellitable-numeric-value -hd-clickable">OTL</th>
+          <th title="Erzielte Tore" class="-hd-util-intellitable-numeric-value -hd-clickable">T+</th>
+          <th title="Erhaltene Tore" class="-hd-util-intellitable-numeric-value -hd-clickable">T-</th>
+          <th title="Tordifferenz" class="-hd-util-intellitable-numeric-value -hd-clickable">TD</th>
+          <th title="Punkte" class="-hd-util-intellitable-numeric-value -hd-clickable">P</th>
         </tr>
-        <% } %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <% for(let i = 0; i < data.length; i++) { %>
+          <% const element = data[i] %>
+          <tr class="-hd-los-standings-row -hd-los-standings-row-13048 -hd-clickable">
+            <td class="-hd-los-standings-col-tableRank -hd-util-intellitable-rank-value" value="<%= element.place %>">
+              <%= i + 1 %>
+            </td>
+            <td class="-hd-los-standings-col-teamLogo -hd-util-intellitable-inline-image -hd-los-standings-team-logo"
+              value="[object HTMLImageElement]"><img class="elementor" src="/images/tn_<%= element.logo %>.png" /></td>
+            <td class="-hd-los-standings-col-teamShortname -hd-los-standings-team-name-short" value="<%= element.logo %>">
+              <%= element.logo %>
+            </td>
+            <form action="/tabelle" class="get">
+              <td class="-hd-los-standings-col-teamLongname -hd-los-standings-team-name-long" id="name"
+                value="<%= element.name %>">
+                <%= element.name %>
+              </td>
+            </form>
+  
+            <td class="-hd-los-standings-col-gamesPlayed -hd-util-intellitable-numeric-value"
+              value="<%= element.games %>">
+              <%= element.games %>
+            </td>
+            <td class="-hd-los-standings-col-gamesWon -hd-util-intellitable-numeric-value" value="<%= element.win %>">
+              <%= element.win %>
+            </td>
+            <td class="-hd-los-standings-col-gamesLost -hd-util-intellitable-numeric-value" value="<%= element.loose %>">
+              <%= element.loose %>
+            </td>
+            <td class="-hd-los-standings-col-gamesWonInOt -hd-util-intellitable-numeric-value"
+              value="<%= element.winOT %>">
+              <%= element.winOT %>
+            </td>
+            <td class="-hd-los-standings-col-gamesLostInOt -hd-util-intellitable-numeric-value"
+              value="<%= element.looseOT %>">
+              <%= element.looseOT %>
+            </td>
+            <td class="-hd-los-standings-col-goalsFor -hd-util-intellitable-numeric-value" value="<%= element.goals %>">
+              <%= element.goals %>
+            </td>
+            <td class="-hd-los-standings-col-goalsAgainst -hd-util-intellitable-numeric-value"
+              value="<%= element.ggoals %>">
+              <%= element.ggoals %>
+            </td>
+            <td class="-hd-los-standings-col-goalDifference -hd-util-intellitable-numeric-value"
+              value="<%= element.goals - element.ggoals %>">
+              <%= element.goals - element.ggoals %>
+            </td>
+            <td class="-hd-los-standings-col-points -hd-util-intellitable-numeric-value" value="<%= element.points %>">
+              <%= element.points %>
+            </td>
+          </tr>
+          <% } %>
+      </tbody>
+    </table>
+  </div>
 
   <script src="/js/nav.js"></script>
 </body>

@@ -885,7 +885,8 @@
             overflow: auto;
             position: relative;
             font-family: "Fira Sans", sans-serif;
-            font-size: 16px
+            font-size: 16px;
+            z-index: -1;
         }
 
         .-hd-util-intellitable-rank {

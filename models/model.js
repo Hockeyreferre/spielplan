@@ -60,6 +60,14 @@ const dataSchema = new mongoose.Schema({
     overtime: {
         required: false,
         type: Boolean
+    },
+    goalsHome: {
+        required: false,
+        type: Number
+    },
+    goalsAway: {
+        required: false,
+        type: Number
     }
 })
 

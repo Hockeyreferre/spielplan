@@ -29,8 +29,8 @@
             </button>
             <div id="navbar-menu" aria-labelledby="navbar-toggle">
                 <ul class="navbar-links">
-                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/">Startseite</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/spielplan">Spielplan</a></li>
+                    <!-- <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/">Startseite</a></li> -->
+                    <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>">Spielplan</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="/<%= liga %>/tabelle">Tabelle</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="/<%= liga == 'u15' ? 'ostseeliga' : 'u15' %>">
                             <%= liga=='u15' ? 'Ostseeliga' : 'U13 / U15' %>
@@ -111,7 +111,7 @@
                     <div>Cheftrainer <%= data.home.logo %></div>
                 </div>
                 <div class="-hd-los-game-full-report-game-fact-value">
-                    <div>&#160;</div>
+                    <div><% if(home) {home.trainer.fullname} else {'&#160;'} %></div>
                 </div>
             </div>
             <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-headcoachaway">
@@ -119,7 +119,7 @@
                     <div>Cheftrainer <%= data.away.logo %></div>
                 </div>
                 <div class="-hd-los-game-full-report-game-fact-value">
-                    <div>&#160;</div>
+                    <div><% if(home) {away.trainer.fullname} else {'&#160;'} %></div>
                 </div>
             </div>
             <div class="-hd-los-game-full-report-game-fact-row -hd-los-game-full-report-game-fact-row-linesman1">

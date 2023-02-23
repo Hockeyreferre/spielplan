@@ -23,6 +23,7 @@ body {
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /* z-index: auto; */
 }
 .navbar-container {
   display: flex;
