@@ -17,13 +17,14 @@ body {
   margin-right: auto;
 }
 #navbar {
+  position: relative;
   --navbar-height: 64px;
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  /* z-index: auto; */
+  z-index: 1;
 }
 .navbar-container {
   display: flex;
