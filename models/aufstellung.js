@@ -182,9 +182,8 @@ const aufstellung = new mongoose.Schema({
         }
     }, 
     Trainer: {
-        fullname: {
-            type: String
-        }
+        required: false,
+        type: String
     }
 })
 

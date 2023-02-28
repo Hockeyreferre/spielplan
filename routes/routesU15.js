@@ -34,7 +34,7 @@ router.get('/game/:id/:home/:away', async (req, res) => {
         data: await Model.findById(req.params.id), 
         liga: liga, 
         goals: await Goal.find({ gameID: req.params.id }), 
-        penaltys: await Penalty.find({ gameID: req.params.id }),
+        penaltys: await Penalty.find({ gameID: req.params.id }).sort({time: 1}),
         goalsHome: await Goal.find({ gameID: req.params.id, verein: req.params.home }),
         goalsAway: await Goal.find({ gameID: req.params.id, verein: req.params.away }),
         goalsHome1: await Goal.find({ gameID: req.params.id, verein: req.params.home, period: 1 }),
