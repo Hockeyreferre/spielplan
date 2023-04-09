@@ -12,6 +12,11 @@ router.get('', async (req, res) => {
     res.json(games);
 })
 
+router.get('/live', async (req, res) => {
+    let games = await Model.find({ live: true }).sort({live: -1})
+    res.json(games);
+})
+
 router.get('/tabelle', async (req, res) => {
     res.render('tabelle', { 
         data: await Tabelle.find({ liga: liga }).sort(table), 
