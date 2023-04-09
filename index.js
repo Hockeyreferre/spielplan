@@ -31,10 +31,12 @@ app.use('/', express.static('/'));
 const routes = require('./routes/routes');
 const routesU15 = require('./routes/routesU15');
 const routesOstseeliga = require('./routes/routesOstseeliga');
+const apiRoutes = require('./routes/apiRoutes')
 
 app.use('/', routes)
 app.use('/u15', routesU15)
 app.use('/ostseeliga', routesOstseeliga)
+app.use('/app', apiRoutes)
 
 app.listen(port, () => {
     console.log(`Server Started at ${port}`)
