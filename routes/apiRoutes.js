@@ -18,7 +18,7 @@ router.get('/live', async (req, res) => {
 })
 
 router.get('/tabelle', async (req, res) => {
-    let table = await Tabelle.find({ liga: liga }).sort(table);
+    let table = await Tabelle.find().sort(table);
     res.json(table)
 })
 
