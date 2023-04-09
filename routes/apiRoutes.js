@@ -18,11 +18,8 @@ router.get('/live', async (req, res) => {
 })
 
 router.get('/tabelle', async (req, res) => {
-    res.render('tabelle', { 
-        data: await Tabelle.find({ liga: liga }).sort(table), 
-        liga: liga,
-        goals: await Goal.find({ verein: req.body.name })
-    });
+    let table = await Tabelle.find({ liga: liga }).sort(table);
+    res.json(table)
 })
 
 router.get('/game/:id/:home/:away', async (req, res) => {
