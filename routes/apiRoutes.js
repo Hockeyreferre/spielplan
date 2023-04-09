@@ -5,7 +5,7 @@ const Tabelle = require('../models/tabelle');
 const Goal = require('../models/goal');
 const Penalty = require('../models/penalty');
 const router = express.Router();
-const table = { points: -1, games: -1 }
+const sort = { points: -1, games: -1 }
 
 router.get('', async (req, res) => {
     let games = await Model.find().sort({live: -1})
@@ -18,7 +18,7 @@ router.get('/live', async (req, res) => {
 })
 
 router.get('/tabelle', async (req, res) => {
-    let table = await Tabelle.find().sort(table);
+    let table = await Tabelle.find().sort(sort);
     res.json(table)
 })
 
