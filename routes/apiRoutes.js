@@ -17,8 +17,8 @@ router.get('/live', async (req, res) => {
     res.json(games);
 })
 
-router.get('/tabelle', async (req, res) => {
-    let table = await Tabelle.find().sort(sort);
+router.get('/tabelle/:liga', async (req, res) => {
+    let table = await Tabelle.find({ liga: req.params.liga}).sort(sort);
     res.json(table)
 })
 
