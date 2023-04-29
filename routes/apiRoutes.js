@@ -32,4 +32,9 @@ router.get('/goals/:id/:team', async (req, res) => {
     res.json(game)
 })
 
+router.get('/goals/:id', async (req, res) => {
+    let game = await Goal.find({gameID: req.params.id})
+    res.json(game)
+})
+
 module.exports = router
